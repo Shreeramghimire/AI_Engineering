@@ -108,4 +108,10 @@ A large learning rate (α) can lead to big steps and miss the minimum point. A s
 
 In reality, techniques like **learning rate schedules**, **Adam optimizer**, or **learning rate decay** are used to adapt the rate during training — starting larger for fast initial progress and shrinking for fine-tuning.
 
+### The Training Loop
+Neural networks train by initializing weights and biases randomly. Subsequently, we repeat the following process in a loop: forward propagation → calculate error → backpropagation → repeat until iterations/epochs are reached or the error is below the threshold.
+
+The training loop at the heart of deep learning. Breaking it down:
+
+1. Initialization: Weights are set to small random values (not zeros, because that would make all neurons in a layer identical). Common schemes: Xavier/Glorot, He initialization.
 
