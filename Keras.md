@@ -102,3 +102,10 @@ A large learning rate (α) can lead to big steps and miss the minimum point. A s
 
 **Too large:** The algorithm overshoots the minimum, possibly oscillating or diverging (loss increases instead of decreasing).
 
+**Too small:** Convergence is extremely slow; training may take an impractical amount of time or get stuck in a plateau.
+
+**Just right:** Steady, efficient convergence to a good minimum.
+
+In reality, techniques like **learning rate schedules**, **Adam optimizer**, or **learning rate decay** are used to adapt the rate during training — starting larger for fast initial progress and shrinking for fine-tuning.
+
+
