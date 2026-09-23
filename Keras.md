@@ -43,3 +43,6 @@ An artificial neuron (also called a node or unit) performs a simplified version 
 4. **Activation function:** applies a non-linear transformation (e.g., ReLU, sigmoid) to decide the output.
 
 5. **Output:** passed to the next layer.
+
+### Layers of a Neural Network
+
