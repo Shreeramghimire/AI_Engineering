@@ -29,7 +29,7 @@ This is the principle behind Hebbian learning, often summarized as "neurons that
 
 In artificial neural networks, this idea is mirrored by weight adjustment: connections that contribute to correct outputs are strengthened (weights increased), and those that contribute to errors are weakened. The difference is that biological learning is local and unsupervised, while artificial networks typically use a global error signal (backpropagation) to adjust weights.
 
-### Artificial Neuron
+## Artificial Neuron
 
 An artificial neuron behaves in the same way as a biological neuron.
 An artificial neuron (also called a node or unit) performs a simplified version of the biological process:
