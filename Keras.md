@@ -3,4 +3,6 @@ The main body of a neuron is the soma, and the extensive network of arms that st
 
 A biological neuron has three main parts:
 
-Soma (cell body): 
+**Soma (cell body):** Contains the nucleus and performs the cell's metabolic functions. It integrates incoming signals.
+
+
