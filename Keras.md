@@ -79,7 +79,7 @@ Weights determine the strength or importance of each input feature coming into a
 
 Bias is an extra constant value added to the weighted inputs. It shifts the final result of a neuron up or down regardless of the input values. Like a y-intercept in a linear equation (y = mx + b), the bias (b) is added right after multiplying inputs by weights: z = w ⋅ x + b. Without bias, the network's functions would always be forced to pass through the origin (0,0), heavily limiting flexibility.
 
-$$(\text{Output}=(\text{inputs}\times \text{weights})+\text{bias}\)$$
+$$ \text{Output}=(\text{inputs}\times \text{weights})+\text{bias}\ $$
 
 For example, a trained network for digit recognition (0–9) takes a 28×28 pixel image, performs forward propagation through its layers, and outputs a probability distribution over the 10 digits. The predicted digit is the one with the highest probability.
 
