@@ -87,5 +87,15 @@ For example, a trained network for digit recognition (0–9) takes a 28×28 pixe
 
 Gradient descent is an iterative optimization algorithm for finding the minimum of a function. It is the workhorse of neural network training. The function being minimized is the loss function (also called the cost function), which measures how wrong the network's predictions are.
 
+The algorithm works by:
+
+1. Computing the gradient (slope) of the loss with respect to each weight and bias.
+
+2. Moving the parameters in the opposite direction of the gradient (downhill) by a step proportional to the learning rate.
+
+3. Repeating until the loss stops decreasing or a stopping criterion is met.
+
+Mathematically: w ← w − α · ∂L/∂w, where α is the learning rate and ∂L/∂w is the gradient of the loss with respect to the weight.
+
 
 
