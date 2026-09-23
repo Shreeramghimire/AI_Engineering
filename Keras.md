@@ -98,4 +98,8 @@ The algorithm works by:
 Mathematically: w ← w − α · ∂L/∂w, where α is the learning rate and ∂L/∂w is the gradient of the loss with respect to the weight.
 
 
+A large learning rate (α) can lead to big steps and miss the minimum point. A small learning rate can result in extremely small steps and cause the algorithm to take a long time to find the minimum point.
+
+
+
 
