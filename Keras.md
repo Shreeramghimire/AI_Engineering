@@ -127,4 +127,22 @@ The training loop at the heart of deep learning. Breaking it down:
 
 ### The Vanishing Gradient Problem
 
+The vanishing gradient problem occurs when the error signal shrinks exponentially as it propagates backward through deep neural networks or recurrent neural networks (RNNs), causing weights in earlier layers to stop updating.
 
+**Cause:**
+
+1. Saturating activation functions: Functions like sigmoid squash inputs into a small output range, producing small derivatives
+
+2. Repeated multiplication in backpropagation: Backpropagation multiplies the derivatives of activation functions and weights across every layer, since these values are typically less than 1, the product shrinks as it moves backward
+
+3. Poor weight initialization: Starting with initial weights that are too small accelerates the exponential decay of the gradient signal
+
+**Consequences**
+
+- Gradients (the values used to adjust network weights via backpropagation) become extremely close to zero
+
+- Early layers freeze in place and fail to learn meaningful feature representations
+
+- Sequential models (RNNs) lose the ability to connect information from early time steps to later predictions
+
+Example: In a simple two-neuron network, the error gradient with respect to an early weight (e.g., w1) is very small, because backpropagation keeps multiplying factors less than one together; gradients shrink further with each layer moved backward.
