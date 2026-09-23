@@ -62,3 +62,10 @@ Forward propagation is the process through which data passes through layers of n
 - The outputs of that layer become the inputs to the next layer.
 
 - This repeats until the output layer produces the final result.
+
+In mathematical terms, for each layer l:
+a⁽ˡ⁾ = f(W⁽ˡ⁾ · a⁽ˡ⁻¹⁾ + b⁽ˡ⁾)
+where f is the activation function, W is the weight matrix, b is the bias vector, and a is the activation (output) of the layer.
+
+Forward propagation is used both during **training** (to compute the prediction before calculating the loss) and during **inference** (to make predictions on new data).
+
