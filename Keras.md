@@ -146,3 +146,14 @@ The vanishing gradient problem occurs when the error signal shrinks exponentiall
 - Sequential models (RNNs) lose the ability to connect information from early time steps to later predictions
 
 Example: In a simple two-neuron network, the error gradient with respect to an early weight (e.g., w1) is very small, because backpropagation keeps multiplying factors less than one together; gradients shrink further with each layer moved backward.
+
+**Common Solutions**
+
+Non-saturating activations: Switch to ReLU, which maintains a derivative of 1 for positive inputs
+
+Better initialization: Use Xavier or He (Kaiming) initialization to keep variance controlled across layers
+
+Architectural shortcuts: Use ResNets (skip connections) or LSTMs/GRUs for sequential data, letting gradients flow unimpeded
+
+Normalization: Apply batch normalization to stabilize the distribution of layer inputs
+
