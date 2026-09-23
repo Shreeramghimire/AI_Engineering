@@ -54,3 +54,6 @@ A feedforward neural network is organized into layers:
 
 - **Output layer:** Produces the final prediction. The number of nodes depends on the task: one for binary classification, one per class for multi-class, one per value for regression.
 
+### Forward Propagation
+Forward propagation is the process through which data passes through layers of neurons in a neural network from the input layer to the output layer.
+
