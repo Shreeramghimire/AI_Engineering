@@ -71,9 +71,13 @@ Forward propagation is used both during **training** (to compute the prediction 
 
 ### Computing Network Output
 
-This is the core idea of a parametric model: once the weights and biases are learned (during training), the network becomes a deterministic function that maps any input to an output. No further learning is needed for inference.
+This is the core idea of a parametric model: once the **weights** and **biases** are learned (during training), the network becomes a deterministic function that maps any input to an output. No further learning is needed for inference.
 
-Weights and biases are the core learnable parameters that allow a neural network to learn patterns, make decisions, and improve its accuracy from data. Weights determine the strength or importance of each input feature coming into a neuron.
+Weights and biases are the core learnable parameters that allow a neural network to learn patterns, make decisions, and improve its accuracy from data. 
+
+Weights determine the strength or importance of each input feature coming into a neuron. Mathematically: Each incoming input (x) is multiplied by its corresponding weight (w). 
+
+Bias is an extra constant value added to the weighted inputs. It shifts the final result of a neuron up or down regardless of the input values. Like a y-intercept in a linear equation (y = mx + b), the bias (b) is added right after multiplying inputs by weights: z = w ⋅ x + b. Without bias, the network's functions would always be forced to pass through the origin (0,0), heavily limiting flexibility.
 
 For example, a trained network for digit recognition (0–9) takes a 28×28 pixel image, performs forward propagation through its layers, and outputs a probability distribution over the 10 digits. The predicted digit is the one with the highest probability.
 
