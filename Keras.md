@@ -1,1 +1,6 @@
+## Biological Neuron Structure
+The main body of a neuron is the soma, and the extensive network of arms that stick out of the body are called dendrites. The long arm that sticks out of the soma in the other direction is called the axon. Whiskers at the end of the axon are called the synapses.
 
+A biological neuron has three main parts:
+
+Soma (cell body): 
