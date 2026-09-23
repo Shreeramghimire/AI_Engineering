@@ -48,9 +48,9 @@ An artificial neuron (also called a node or unit) performs a simplified version 
 
 A feedforward neural network is organized into layers:
 
-- Input layer – One node per input feature. It doesn't perform computation; it just distributes the input to the next layer.
+- **Input layer:** One node per input feature. It doesn't perform computation; it just distributes the input to the next layer.
 
-- Hidden layers – One or more layers of neurons that transform the input. "Deep" learning refers to having many hidden layers. Each layer learns increasingly abstract representations (e.g., edges → shapes → objects in image recognition).
+- **Hidden layers:** One or more layers of neurons that transform the input. "Deep" learning refers to having many hidden layers. Each layer learns increasingly abstract representations (e.g., edges → shapes → objects in image recognition).
 
-- Output layer – Produces the final prediction. The number of nodes depends on the task: one for binary classification, one per class for multi-class, one per value for regression.
+- **Output layer:** Produces the final prediction. The number of nodes depends on the task: one for binary classification, one per class for multi-class, one per value for regression.
 
