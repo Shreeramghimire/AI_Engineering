@@ -187,3 +187,11 @@ It is mathematically optimized for activations that are linear or symmetric arou
 **He initialization**, also known as Kaiming initialization, is a technique designed specifically for deep neural networks that use asymmetric, rectified activation functions like ReLU (Rectified Linear Unit) and its variants.
 
 Introduced by Kaiming He et al. in 2015, it solves the problem where Xavier initialization underestimates the weight variance needed when half of the neurons are deactivated (outputting zero) by ReLU.
+
+**Why Xavier Fails on ReLU**
+
+The ReLU Drop: Because ReLU maps all negative inputs to zero, roughly 50% of the neurons in a layer turn off at any given time during training.
+
+Variance Halving: This deactivation slashes the variance of the layer's output signal by half.
+
+The Consequence: If you use Xavier initialization with ReLU, the signal variance will still decay exponentially across many deep layers, leading back to the vanishing gradient problem.
