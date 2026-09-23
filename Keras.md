@@ -210,3 +210,12 @@ $${where}\quad \sigma =\sqrt{\frac{2}{n_{in}}}\$$
 Uniform Distribution: 
 
 $$W\sim U\left(-\sqrt{\frac{6}{n_{in}}},\sqrt{\frac{6}{n_{in}}}\right)\$$
+
+
+## He vs. Xavier: 
+
+| **Feature** | **Xavier (Glorot) Initialization** | **He (Kaiming) Initialization** |
+|---|---|---|
+| **Optimized For** | Linear or symmetric activations (**tanh**, **sigmoid**) | Rectified, asymmetric activations (**ReLU**, **Leaky ReLU**) |
+| **Normal Variance (\(\sigma^2\))** | $$frac{2}{n_{in}+n_{out}}\$$ | $$frac{2}{n_{in}}\$$ |
+| **Core Assumption** | Activations are approximately linear around zero. | Approximately half of the activations are zeroed out by ReLU. |
