@@ -178,5 +178,7 @@ Normal Distribution
 
 $$ W\sim N\left(0,\sigma ^{2}\right)$$  
 
-quad \text{where}\quad \sigma =\sqrt{\frac{2}{n_{in}+n_{out}}}\]\[n_{in}\] (fan-in): The number of input units to the layer.\[n_{out}\] (fan-out): The number of output units from the layer. 
+$$text{where}\quad \sigma =\sqrt{\frac{2}{n_{in}+n_{out}}}\]\[n_{in}\]$$
+
+(fan-in): The number of input units to the layer.\[n_{out}\] (fan-out): The number of output units from the layer. 
 **He initialization**, 
