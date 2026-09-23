@@ -34,10 +34,12 @@ In artificial neural networks, this idea is mirrored by weight adjustment: conne
 An artificial neuron behaves in the same way as a biological neuron.
 An artificial neuron (also called a node or unit) performs a simplified version of the biological process:
 
-1. Inputs (x₁, x₂, …, xₙ) analogous to signals from dendrites.
+1. **Inputs** (x₁, x₂, …, xₙ) analogous to signals from dendrites.
 
-2. Weights (w₁, w₂, …, wₙ) analogous to synaptic strengths.
+2. **Weights** (w₁, w₂, …, wₙ) analogous to synaptic strengths.
 
-3. Summation: multiply each input by its weight and add them up: z = Σ(wᵢxᵢ) + b, where b is a bias term.
+3. **Summation:** multiply each input by its weight and add them up: z = Σ(wᵢxᵢ) + b, where b is a bias term.
 
-4. Activation function: applies a non-linear transformation (e.g., ReLU, sigmoid) to decide the output.
+4. **Activation function:** applies a non-linear transformation (e.g., ReLU, sigmoid) to decide the output.
+
+5. **Output:** passed to the next layer.
