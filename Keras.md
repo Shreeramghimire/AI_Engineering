@@ -69,3 +69,6 @@ where f is the activation function, W is the weight matrix, b is the bias vector
 
 Forward propagation is used both during **training** (to compute the prediction before calculating the loss) and during **inference** (to make predictions on new data).
 
+### Computing Network Output
+
+
