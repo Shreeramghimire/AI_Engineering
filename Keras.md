@@ -196,4 +196,4 @@ Variance Halving: This deactivation slashes the variance of the layer's output s
 
 The Consequence: If you use Xavier initialization with ReLU, the signal variance will still decay exponentially across many deep layers, leading back to the vanishing gradient problem.
 
-**He** initialization counteracts the 50% loss of signal by doubling the variance of the initial weights compared to Xavier. Instead of factoring in both inputs and outputs $\[n_{in}\]$ and $[n_{out}\]$, it focuses primarily on the number of incoming connections $\[n_{in}\]$ or fan-in). 
+**He** initialization counteracts the 50% loss of signal by doubling the variance of the initial weights compared to Xavier. Instead of factoring in both inputs and outputs $\[n_{in}\]$ and $[n_{out}\]$, it focuses primarily on the number of incoming connections $\[n_{in}\]$ or (fan-in). 
