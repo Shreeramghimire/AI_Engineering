@@ -117,6 +117,7 @@ The training loop at the heart of deep learning. Breaking it down:
 
 2. Forward propagation: Input data flows through the network to produce predictions.
 
+3. Loss computation: The error between predictions and ground truth is measured (e.g., mean squared error, cross-entropy).
 
 
 
