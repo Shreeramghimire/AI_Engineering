@@ -15,4 +15,6 @@ A biological neuron has these parts:
 
 1. Reception: Neurotransmitters released from a presynaptic neuron bind to receptors on the dendrites, creating electrical changes (postsynaptic potentials).
 
-2. 
+2. Integration: These electrical signals travel to the soma, where they are summed. If the combined signal exceeds a threshold, the neuron "fires."
+
+3. 
