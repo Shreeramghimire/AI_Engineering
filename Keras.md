@@ -170,15 +170,18 @@ It achieves balance by drawing initial weights randomly from a distribution with
 
 Depending on your framework, Xavier initialization samples weights from one of two distributions: 
 
-Uniform Distribution
+- Uniform Distribution:
 
 $$W\sim U\left(-\sqrt{\frac{6}{n_{in}+n_{out}}},\sqrt{\frac{6}{n_{in}+n_{out}}}\right)\$$
 
-Normal Distribution
+- Normal Distribution:
 
 $$ W\sim N\left(0,\sigma ^{2}\right)$$  
 
 $${where}\quad \sigma =\sqrt{\frac{2}{n_{in}+n_{out}}}\]$$
 
 $n_{in}\(fan-in)$: The number of input units to the layer. $n_{out}\(fan-out)$ : The number of output units from the layer. 
+
+It mathematically optimized for activations that are linear or symmetric around zero, such as **tanh** and **sigmoid**.
+
 **He initialization**, 
