@@ -20,3 +20,6 @@ A biological neuron has these parts:
 3. Transmission: An action potential (electrical spike) travels down the axon.
 
 4. Output: At the synapses, the electrical signal triggers the release of neurotransmitters, passing the message to the next neurons.
+
+This "all-or-nothing" firing and the summation of inputs is the biological basis for the activation function in artificial neurons (e.g., a step function or sigmoid that decides whether a node "fires").
+
