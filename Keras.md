@@ -25,4 +25,8 @@ This "all-or-nothing" firing and the summation of inputs is the biological basis
 
 **Learning in the brain** occurs by repeatedly activating certain neural connections over others, and this reinforces those connections.
 
+This is the principle behind Hebbian learning, often summarized as "neurons that fire together, wire together." When two neurons are repeatedly active at the same time, the synapse between them strengthens — a process called long-term potentiation (LTP). Conversely, unused connections weaken (long-term depression).
+
+In artificial neural networks, this idea is mirrored by weight adjustment: connections that contribute to correct outputs are strengthened (weights increased), and those that contribute to errors are weakened. The difference is that biological learning is local and unsupervised, while artificial networks typically use a global error signal (backpropagation) to adjust weights.
+
 
