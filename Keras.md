@@ -121,3 +121,8 @@ The training loop at the heart of deep learning. Breaking it down:
 
 4. Backpropagation: The gradient of the loss with respect to each weight is computed using the chain rule, working backward from the output layer.
 
+5. Weight update: Gradient descent adjusts weights and biases.
+
+
+
+
