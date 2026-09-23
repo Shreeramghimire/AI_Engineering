@@ -83,4 +83,9 @@ $$ \text{Output}=(\text{inputs}\times \text{weights})+\text{bias}\ $$
 
 For example, a trained network for digit recognition (0–9) takes a 28×28 pixel image, performs forward propagation through its layers, and outputs a probability distribution over the 10 digits. The predicted digit is the one with the highest probability.
 
+## Gradient Descent
+
+Gradient descent is an iterative optimization algorithm for finding the minimum of a function. It is the workhorse of neural network training. The function being minimized is the loss function (also called the cost function), which measures how wrong the network's predictions are.
+
+
 
