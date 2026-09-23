@@ -184,7 +184,7 @@ $n_{in}\(fan-in)$: The number of input units to the layer. $n_{out}\(fan-out)$ :
 
 It is mathematically optimized for activations that are linear or symmetric around zero, such as **tanh** and **sigmoid**.
 
-**He initialization**, also known as *Kaiming initialization, is a technique designed specifically for deep neural networks that use asymmetric, rectified activation functions like ReLU (Rectified Linear Unit) and its variants.
+**He initialization**, also known as *Kaiming initialization*, is a technique designed specifically for deep neural networks that use asymmetric, rectified activation functions like ReLU (Rectified Linear Unit) and its variants.
 
 Introduced by **Kaiming He et al. in 2015**, it solves the problem where Xavier initialization underestimates the weight variance needed when half of the neurons are deactivated (outputting zero) by ReLU.
 
