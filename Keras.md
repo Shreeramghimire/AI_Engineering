@@ -10,3 +10,6 @@ A biological neuron has three main parts:
 **Axon:** A long, thin projection that carries the neuron's output signal away from the soma toward other neurons.
 
 **Synapses.** The junctions at the end of the axon (and on dendrites) where signals are transmitted from one neuron to the next.
+
+**Signal flow:** Dendrites receive electrical impulses that carry information from synapses of other adjoining neurons. Dendrites carry the impulses to the soma. In the nucleus, electrical impulses are processed by combining them, and then they are passed on to the axon. The axon carries the processed information to the synapses, and the output of this neuron becomes the input to thousands of other neurons.
+
