@@ -202,7 +202,10 @@ Weights are randomly sampled from a distribution centered around 0 with a booste
 
 Normal Distribution:
 
-$$ W\sim N\left(0,\sigma ^{2}\right$$ 
-$${where}\quad \sigma =\sqrt{\frac{2}{n_{in}}}$$
+$$[W\sim N\left(0,\sigma ^{2}\right)\quad$$ 
+
+$${where}\quad \sigma =\sqrt{\frac{2}{n_{in}}}\$$
+
+
 
 Uniform Distribution: \[W\sim U\left(-\sqrt{\frac{6}{n_{in}}},\sqrt{\frac{6}{n_{in}}}\right)\]
