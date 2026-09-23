@@ -184,9 +184,9 @@ $n_{in}\(fan-in)$: The number of input units to the layer. $n_{out}\(fan-out)$ :
 
 It is mathematically optimized for activations that are linear or symmetric around zero, such as **tanh** and **sigmoid**.
 
-**He initialization**, also known as Kaiming initialization, is a technique designed specifically for deep neural networks that use asymmetric, rectified activation functions like ReLU (Rectified Linear Unit) and its variants.
+**He initialization**, also known as *Kaiming initialization, is a technique designed specifically for deep neural networks that use asymmetric, rectified activation functions like ReLU (Rectified Linear Unit) and its variants.
 
-Introduced by Kaiming He et al. in 2015, it solves the problem where Xavier initialization underestimates the weight variance needed when half of the neurons are deactivated (outputting zero) by ReLU.
+Introduced by **Kaiming He et al. in 2015**, it solves the problem where Xavier initialization underestimates the weight variance needed when half of the neurons are deactivated (outputting zero) by ReLU.
 
 **Why Xavier Fails on ReLU**
 
@@ -219,3 +219,10 @@ $$W\sim U\left(-\sqrt{\frac{6}{n_{in}}},\sqrt{\frac{6}{n_{in}}}\right)\$$
 | **Optimized For** | Linear or symmetric activations (**tanh**, **sigmoid**) | Rectified, asymmetric activations (**ReLU**, **Leaky ReLU**) |
 | **Normal Variance $$\(\sigma^2\)$$** | $$(\frac{2}{n_{in}+n_{out}}\)$$ | $$(\frac{2}{n_{in}}\)$$ |
 | **Core Assumption** | Activations are approximately linear around zero. | Approximately half of the activations are zeroed out by ReLU. |
+
+**What is ResNets?**
+
+The Concept of skip connections (or shortcut connections), which allow training of incredibly deep neural networks without suffering from the vanishing gradient problem. Introduced by Kaiming He et al. in 2015
+
+
+
