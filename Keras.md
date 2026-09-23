@@ -57,3 +57,8 @@ A feedforward neural network is organized into layers:
 ### Forward Propagation
 Forward propagation is the process through which data passes through layers of neurons in a neural network from the input layer to the output layer.
 
+- Input values are multiplied by the weights of the first hidden layer, summed, and passed through an activation function.
+
+- The outputs of that layer become the inputs to the next layer.
+
+- This repeats until the output layer produces the final result.
