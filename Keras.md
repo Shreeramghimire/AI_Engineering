@@ -115,3 +115,8 @@ The training loop at the heart of deep learning. Breaking it down:
 
 1. Initialization: Weights are set to small random values (not zeros, because that would make all neurons in a layer identical). Common schemes: Xavier/Glorot, He initialization.
 
+2. Forward propagation: Input data flows through the network to produce predictions.
+
+
+
+
