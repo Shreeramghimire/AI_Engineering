@@ -5,4 +5,4 @@ A biological neuron has three main parts:
 
 **Soma (cell body):** Contains the nucleus and performs the cell's metabolic functions. It integrates incoming signals.
 
-
+**Dendrites:** 
