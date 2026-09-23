@@ -19,4 +19,4 @@ A biological neuron has these parts:
 
 3. Transmission: An action potential (electrical spike) travels down the axon.
 
-4. 
+4. Output: At the synapses, the electrical signal triggers the release of neurotransmitters, passing the message to the next neurons.
