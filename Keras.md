@@ -123,6 +123,5 @@ The training loop at the heart of deep learning. Breaking it down:
 
 5. Weight update: Gradient descent adjusts weights and biases.
 
-
-
+6. Repeat: One full pass through the training data is an epoch. Training stops when a maximum number of epochs is reached, or the loss falls below a threshold (or stops improving — early stopping).
 
