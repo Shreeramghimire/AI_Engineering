@@ -8,3 +8,5 @@ A biological neuron has three main parts:
 **Dendrites:** Branch-like extensions that receive signals from other neurons. Their branching structure allows a single neuron to receive input from thousands of others.
 
 **Axon:** A long, thin projection that carries the neuron's output signal away from the soma toward other neurons.
+
+**Synapses.** The junctions at the end of the axon (and on dendrites) where signals are transmitted from one neuron to the next.
