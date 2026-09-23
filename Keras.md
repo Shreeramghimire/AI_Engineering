@@ -83,7 +83,7 @@ $$ \text{Output}=(\text{inputs}\times \text{weights})+\text{bias}\ $$
 
 For example, a trained network for digit recognition (0–9) takes a 28×28 pixel image, performs forward propagation through its layers, and outputs a probability distribution over the 10 digits. The predicted digit is the one with the highest probability.
 
-## Gradient Descent
+### Gradient Descent
 
 Gradient descent is an iterative optimization algorithm for finding the minimum of a function. It is the workhorse of neural network training. The function being minimized is the loss function (also called the cost function), which measures how wrong the network's predictions are.
 
@@ -97,9 +97,8 @@ The algorithm works by:
 
 Mathematically: w ← w − α · ∂L/∂w, where α is the learning rate and ∂L/∂w is the gradient of the loss with respect to the weight.
 
-
+### Learning Rate
 A large learning rate (α) can lead to big steps and miss the minimum point. A small learning rate can result in extremely small steps and cause the algorithm to take a long time to find the minimum point.
 
-
-
+**Too large:** The algorithm overshoots the minimum, possibly oscillating or diverging (loss increases instead of decreasing).
 
