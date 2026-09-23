@@ -23,3 +23,6 @@ A biological neuron has these parts:
 
 This "all-or-nothing" firing and the summation of inputs is the biological basis for the activation function in artificial neurons (e.g., a step function or sigmoid that decides whether a node "fires").
 
+**Learning in the brain** occurs by repeatedly activating certain neural connections over others, and this reinforces those connections.
+
+
