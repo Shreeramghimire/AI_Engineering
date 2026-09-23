@@ -127,13 +127,13 @@ The training loop at the heart of deep learning. Breaking it down:
 
 ### The Vanishing Gradient Problem
 
-The vanishing gradient problem occurs when the error signal shrinks exponentially as it propagates backward through deep neural networks or recurrent neural networks (RNNs), causing weights in earlier layers to stop updating.
+The vanishing gradient problem occurs when the error signal shrinks exponentially as it propagates backward through deep neural networks or **recurrent neural networks (RNNs)**, causing weights in earlier layers to stop updating.
 
 **Cause:**
 
 1. Saturating activation functions: Functions like sigmoid squash inputs into a small output range, producing small derivatives
 
-2. Repeated multiplication in backpropagation: Backpropagation multiplies the derivatives of activation functions and weights across every layer, since these values are typically less than 1, the product shrinks as it moves backward
+2. Repeated multiplication in backpropagation: Backpropagation multiplies the derivatives of activation functions and weights across every layer; since these values are typically less than 1, the product shrinks as it moves backward
 
 3. Poor weight initialization: Starting with initial weights that are too small accelerates the exponential decay of the gradient signal
 
@@ -157,3 +157,24 @@ Architectural shortcuts: Use ResNets (skip connections) or LSTMs/GRUs for sequen
 
 Normalization: Apply batch normalization to stabilize the distribution of layer inputs
 
+**What is initialization?**
+Initialization includes setting the initial values of weights for the models, neural networks, or other deep learning architectures.
+
+
+
+**Xavier initialization**, also known as Glorot initialization, is a technique designed to keep the variance of activations and gradients relatively constant across all layers of a deep neural network, preventing gradients from becoming too small (vanishing) or too large (exploding).
+
+Core objective: Ensure that the variance of the outputs of a layer equals the variance of its inputs.
+
+It achieves balance by drawing initial weights randomly from a distribution with a mean of 0 and a specific variance based on the layer's number of input and output units (fan-in and fan-out).
+
+Depending on your framework, Xavier initialization samples weights from one of two distributions: 
+
+Uniform Distribution
+
+$$[W\sim U\left(-\sqrt{\frac{6}{n_{in}+n_{out}}},\sqrt{\frac{6}{n_{in}+n_{out}}}\right)\]$$
+
+Normal Distribution
+
+\[W\sim N\left(0,\sigma ^{2}\right)\quad \text{where}\quad \sigma =\sqrt{\frac{2}{n_{in}+n_{out}}}\]\[n_{in}\] (fan-in): The number of input units to the layer.\[n_{out}\] (fan-out): The number of output units from the layer. 
+**He initialization**, 
