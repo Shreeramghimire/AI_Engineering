@@ -119,5 +119,5 @@ The training loop at the heart of deep learning. Breaking it down:
 
 3. Loss computation: The error between predictions and ground truth is measured (e.g., mean squared error, cross-entropy).
 
-
+4. Backpropagation: The gradient of the loss with respect to each weight is computed using the chain rule, working backward from the output layer.
 
