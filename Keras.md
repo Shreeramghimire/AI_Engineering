@@ -636,3 +636,6 @@ For example, with three classes:
 | Bird               | `[0, 0, 1]`         |
 
 
+This representation works naturally with a **softmax** output layer, which produces a probability for each class.
+
+For binary classification, a **sigmoid** output layer is commonly used to produce the probability of the positive class.
