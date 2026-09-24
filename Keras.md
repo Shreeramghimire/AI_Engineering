@@ -293,4 +293,10 @@ A linear model cannot learn these curves. By applying a non-linear activation fu
 
 **Modern Hidden Layer Standards**
 
-These are used between the input and output layers to help the network learn internal features. ReLU (Rectified Linear Unit): The reigning champion for computer vision. Formula: \(\max(0, z)\). It turns negative numbers into 0 and leaves positive numbers exactly as they are. It is incredibly fast and efficient. GELU (Gaussian Error Linear Unit): The standard choice for modern LLMs like GPT and BERT. It acts like a smooth version of ReLU, allowing a tiny bit of negative information to pass through, which helps with language understanding. 
+These are used between the input and output layers to help the network learn internal features. 
+
+- ReLU (Rectified Linear Unit): The reigning champion for computer vision. Formula: $\max(0, z)\$. It turns negative numbers into 0 and leaves positive numbers exactly as they are. It is incredibly fast and efficient.
+
+- GELU (Gaussian Error Linear Unit): The standard choice for modern LLMs like GPT and BERT. It acts like a smooth version of ReLU, allowing a tiny bit of negative information to pass through, which helps with language understanding.
+
+
