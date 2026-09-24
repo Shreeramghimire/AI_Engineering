@@ -300,3 +300,9 @@ These are used between the input and output layers to help the network learn int
 - GELU (Gaussian Error Linear Unit): The standard choice for modern LLMs like GPT and BERT. It acts like a smooth version of ReLU, allowing a tiny bit of negative information to pass through, which helps with language understanding.
 
 
+**Classic Functions** 
+
+- Sigmoid / Tanh: Historically popular, they squash numbers into tight ranges (0 to 1 or -1 to 1). As discussed earlier, they are rarely used in hidden layers today because they cause the vanishing gradient problem.
+
+  
+
