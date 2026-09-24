@@ -222,7 +222,7 @@ $$W\sim U\left(-\sqrt{\frac{6}{n_{in}}},\sqrt{\frac{6}{n_{in}}}\right)\$$
 
 **What is ResNets?**
 
-The Concept of skip connections (or shortcut connections), which allow training of incredibly deep neural networks without suffering from the vanishing gradient problem. Introduced by Kaiming He et al. in 2015
+The Concept of skip connections (or shortcut connections), which allow training of incredibly deep neural networks without suffering from the vanishing gradient problem. Introduced by Kaiming He et al. in 2015. 
 
 
 
