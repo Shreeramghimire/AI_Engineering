@@ -380,3 +380,7 @@ where $\Phi(x)\$ is the **cumulative distribution function (CDF) of the standard
 
 - **TensorFlow / PyTorch** = the **engine** (raw power, full control, more code)
 - **Keras** = the **steering wheel and dashboard** (easy interface on top of the engine)
+
+#### TensorFlow
+
+TensorFlow is used in the production of deep learning models and has a very large community of users.
