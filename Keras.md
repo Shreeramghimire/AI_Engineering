@@ -281,3 +281,5 @@ Inside a neural network, a single neuron performs a two-step calculation:
 $$
 z = (w_1 \times x_1) + (w_2 \times x_2) + \cdots + b
 $$
+
+2. Activation: It passes that final number $[z\]$ through the activation function $(f(z)\)$. This output is what gets sent forward to the next layer of neurons.
