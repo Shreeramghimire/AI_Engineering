@@ -243,7 +243,7 @@ While ResNets solved the vanishing gradient problem for deep spatial networks (i
 | **Feature** | **LSTM (Long Short-Term Memory)** | **GRU (Gated Recurrent Unit)** |
 |---|---|---|
 | **Year Introduced** | 1997 (by Hochreiter & Schmidhuber) | 2014 (by Cho et al.) |
-| **Internal States** | Uses **two states**: Cell State $(\(c_t\))$ and Hidden State $(\(h_t\))$ | Uses **one state**: Hidden State $(\(h_t\))$ |
+| **Internal States** | Uses **two states**: Cell State $\(c_t\)$ and Hidden State $\(h_t\)$ | Uses **one state**: Hidden State $\(h_t\)$ |
 | **Number of Gates** | **Three gates**: Forget, Input, and Output gates | **Two gates**: Reset and Update gates |
 | **Parameters** | More parameters (typically slower to train and requires more memory) | Fewer parameters (typically faster to train and more memory-efficient) |
 | **Best Used For** | Problems where modeling complex long-term dependencies is important | Scenarios where computational efficiency and faster iteration are important |
