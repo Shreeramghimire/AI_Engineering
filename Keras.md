@@ -397,4 +397,7 @@ TensorFlow was released by Google in 2015 and quickly became the industry standa
 
 - Large community: Extensive documentation, tutorials, Stack Overflow answers, and pre-trained models.
 
+- Ecosystem: TensorBoard (visualization), TFX (production pipelines), Keras (built-in high-level API).
+
+
 
