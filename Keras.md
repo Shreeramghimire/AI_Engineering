@@ -305,4 +305,10 @@ These are used between the input and output layers to help the network learn int
 - Sigmoid / Tanh: Historically popular, they squash numbers into tight ranges (0 to 1 or -1 to 1). As discussed earlier, they are rarely used in hidden layers today because they cause the vanishing gradient problem.
 
   
+**Output Layer Specialists**
+
+- Softmax: Used for multi-class classification (e.g., deciding if an image is a cat, dog, or bird). It takes all output numbers and scales them into a probability distribution that adds up exactly to 1.0 (100%).
+
+- Linear (No Activation): Used for regression tasks (e.g., predicting the exact numeric price of a house), where the output can be any arbitrary number.
+
 
