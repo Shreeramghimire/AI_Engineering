@@ -467,7 +467,18 @@ Both frameworks require you to understand concepts such as:
 
 **PyTorch vs. Keras Training**
 
+A basic PyTorch training loop typically requires several explicit steps:
 
+1. Perform the **forward pass**
+2. Calculate the **loss**
+3. Clear previous gradients
+4. Perform **backpropagation**
+5. Update model parameters
 
+In Keras, much of this process can be handled automatically with:
+
+```python
+model.fit()
+```
 
 
