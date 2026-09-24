@@ -391,14 +391,5 @@ TensorFlow was released by Google in 2015 and quickly became the industry standa
 
 - Production-ready: Tools like **TensorFlow Serving, TensorFlow Lite (mobile/edge), and TensorFlow.js** (browser) allow deployment across platforms.
 
-Static computation graph (in TF 1.x) – You define the graph first, then run it. This made optimization easier but debugging harder.
-
-Eager execution (TF 2.x) – Now executes operations immediately, making it feel more like PyTorch.
-
-Large community – Extensive documentation, tutorials, Stack Overflow answers, and pre-trained models.
-
-Ecosystem – TensorBoard (visualization), TFX (production pipelines), Keras (built-in high-level API).
-
-Strengths: Deployment, scalability, tooling.
-Weaknesses: Historically harder to learn; API changed significantly between 1.x and 2.x.
+- Static computation graph (in TF 1.x): You define the graph first, then run it. This made optimization easier but debugging harder.
 
