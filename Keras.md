@@ -265,3 +265,5 @@ The GRU is a newer, streamlined variation of the LSTM. It merges the cell state 
 - Update Gate: Acts as a combined forget and input gate. It simultaneously determines how much past information to keep and how much new information to inject.
 
 - Reset Gate: Decides how much of the past information to completely forget before processing the new input.
+
+While LSTMs and GRUs revolutionized sequence modeling, they process data sequentially (step by step), which makes them difficult to parallelize on modern GPU hardware. Because of this limitation, they have largely been superseded by Transformers (like GPT and BERT) for massive Natural Language Processing tasks. However, LSTMs and GRUs remain incredibly useful for lightweight applications, real-time streaming data, edge devices, and specific industrial time-series forecasting where computational power is limited.
