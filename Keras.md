@@ -393,3 +393,6 @@ TensorFlow was released by Google in 2015 and quickly became the industry standa
 
 - Static computation graph (in TF 1.x): You define the graph first, then run it. This made optimization easier but debugging harder.
 
+- Eager execution (TF 2.x): Now executes operations immediately, making it feel more like PyTorch.
+
+
