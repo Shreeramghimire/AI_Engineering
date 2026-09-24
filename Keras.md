@@ -278,4 +278,4 @@ Inside a neural network, a single neuron performs a two-step calculation:
 
 1. Linear Combination: It multiplies all inputs by their respective weights, adds them together, and adds a bias:
 
-   $$[z=(\text{weight}_{1}\times x_{1})+(\text{weight}_{2}\times x_{2})+\dots +\text{bias}\]$$
+   $$\[z=(\text{weight}_{1}\times x_{1})+(\text{weight}_{2}\times x_{2})+\dots +\text{bias}\]$$
