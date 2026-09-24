@@ -285,3 +285,10 @@ $$
 2. Activation: It passes that final number $[z\]$ through the activation function $(f(z)\)$. This output is what gets sent forward to the next layer of neurons.
 
 **Inputs $(x\)$** ───► **[ Weights & Bias ]** ───► **Linear Output $(z\)$** ───► **[ Activation Function ]** ───► **Final Output**
+
+**Why Non-Linearity Matters**
+
+Most real-world data is non-linear. Think of predicting housing prices, identifying faces, or driving autonomous cars—the relationships between variables are full of twists, curves, and sudden thresholds. 
+A linear model cannot learn these curves. By applying a non-linear activation function (like ReLU or GELU), the network gains the ability to warp, bend, and shape its decision boundaries to fit virtually any complex dataset. This mathematical trait is known as the Universal **Approximation Theorem**.
+
+
