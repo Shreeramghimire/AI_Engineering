@@ -369,3 +369,5 @@ where $\Phi(x)\$ is the **cumulative distribution function (CDF) of the standard
 | **Leaky ReLU** | $\(-\infty,\infty)\$ | Hidden layers | Extra hyperparameter |
 | **Softmax** | (0,1), sums to 1 | Multi-class output | Only for output layer |
 | **GELU** | $\approx(-0.17,\infty)\$ | Transformers | Computationally heavier |
+
+### Deep Learning Libraries
