@@ -260,4 +260,8 @@ An LSTM maintains a Cell State, which acts like a conveyor belt carrying relevan
 
 **How GRU Works:** The Streamlined Alternative
 
-The GRU is a newer, streamlined variation of the LSTM. It merges the cell state and hidden state, and reduces the architecture down to just two gates:Update Gate: Acts as a combined forget and input gate. It simultaneously determines how much past information to keep and how much new information to inject.Reset Gate: Decides how much of the past information to completely forget before processing the new input.
+The GRU is a newer, streamlined variation of the LSTM. It merges the cell state and hidden state, and reduces the architecture down to just two gates:
+
+- Update Gate: Acts as a combined forget and input gate. It simultaneously determines how much past information to keep and how much new information to inject.
+
+- Reset Gate: Decides how much of the past information to completely forget before processing the new input.
