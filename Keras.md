@@ -370,4 +370,12 @@ where $\Phi(x)\$ is the **cumulative distribution function (CDF) of the standard
 | **Softmax** | (0,1), sums to 1 | Multi-class output | Only for output layer |
 | **GELU** | $\approx(-0.17,\infty)\$ | Transformers | Computationally heavier |
 
-### Deep Learning Libraries
+## Deep Learning Libraries
+
+| **Library** | **Level** | **Primary Use** | **Backed By** |
+|---|---|---|---|
+| **TensorFlow** | Low-level | Production deployment, large-scale systems | Google |
+| **PyTorch** | Low-level | Research, experimentation, flexibility | Meta (Facebook) |
+| **Keras** | High-level | Fast prototyping, ease of use | Now integrated into TensorFlow |
+
+
