@@ -593,9 +593,9 @@ Keras expects data in specific formats depending on the task:
 
 This is the fundamental setup for **supervised learning**:
 
-- **Predictors (features, $\(X\)$)** – The input variables the model uses to make predictions.  
+- **Predictors (features, (X))** – The input variables the model uses to make predictions.  
   Examples: age, income, education level.
-- **Target (label, $\(y\)$)** – The output variable the model tries to predict.  
+- **Target (label, (y))** – The output variable the model tries to predict.  
   Example: whether a customer will churn (`yes`/`no`).
 
 ### In Python
