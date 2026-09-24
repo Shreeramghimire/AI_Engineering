@@ -247,3 +247,14 @@ While ResNets solved the vanishing gradient problem for deep spatial networks (i
 | **Number of Gates** | **Three gates**: Forget, Input, and Output gates | **Two gates**: Reset and Update gates |
 | **Parameters** | More parameters (typically slower to train and requires more memory) | Fewer parameters (typically faster to train and more memory-efficient) |
 | **Best Used For** | Problems where modeling complex long-term dependencies is important | Scenarios where computational efficiency and faster iteration are important |
+
+**How LSTM Works:** The Three-Gate System
+An LSTM maintains a Cell State, which acts like a conveyor belt carrying relevant information across long sequences. It modifies this conveyor belt using three distinct mathematical gates:
+
+- Forget Gate: Decides what information from the past to throw away. It looks at the new input and the previous hidden state, outputting a number between 0 (completely discard) and 1 (completely keep).
+
+
+-Input Gate: Decides what new information to store in the cell state. It determines which values to update and creates a vector of new candidate values.
+
+
+-Output Gate: Decides what the next hidden state (and output) should be. It filters the updated cell state to only output the parts relevant to the current step.
