@@ -356,7 +356,7 @@ $$
 - GELU:
 
 $$
-\{GELU}(x)=x\Phi(x)
+\{GELU}(x)=x.\Phi(x)
 $$
 
 where $(\Phi(x)\)$ is the **cumulative distribution function (CDF) of the standard Gaussian distribution**.
