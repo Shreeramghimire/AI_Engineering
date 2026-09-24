@@ -210,7 +210,7 @@ Uniform Distribution: 
 $$W\sim U\left(-\sqrt{\frac{6}{n_{in}}},\sqrt{\frac{6}{n_{in}}}\right)\$$
 
 
-## He vs. Xavier: 
+**He vs. Xavier** 
 
 | **Feature** | **Xavier (Glorot) Initialization** | **He (Kaiming) Initialization** |
 |---|---|---|
