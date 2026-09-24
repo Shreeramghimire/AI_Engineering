@@ -481,4 +481,53 @@ In Keras, much of this process can be handled automatically with:
 model.fit()
 ```
 
+### Keras (The High-Level API)
+
+*Keras is a high-level API for building deep learning models. It is popular because of its ease of use and simple syntax, which enables fast development and prototyping.*
+
+Keras was created by **François Chollet** in 2015 with a philosophy centered around:
+
+- **User-friendliness** – Consistent, simple APIs and clear error messages.
+- **Modularity** – Models are built by combining independent, configurable layers.
+- **Fast prototyping** – Go from an idea to a working model quickly.
+
+Since **TensorFlow 2.0**, Keras has been the official high-level API of TensorFlow through `tf.keras`. Modern Keras can also work with multiple backends, including **TensorFlow, JAX, and PyTorch**.
+
+---
+
+#### Keras Abstraction
+
+*Keras can build complex deep learning networks with only a few lines of code. It abstracts many low-level details that would otherwise need to be handled manually.*
+
+| **Task** | **TensorFlow/PyTorch** | **Keras** |
+|---|---|---|
+| Define a layer | Manual weight initialization and forward-pass logic | `Dense(64, activation='relu')` |
+| Build a model | Chain operations manually | `Sequential([...])` |
+| Train | Write or configure a training loop | `model.fit(X, y, epochs=10)` |
+| Evaluate | Manual metric computation | `model.evaluate(X, y)` |
+| Predict | Execute the forward pass manually | `model.predict(X)` |
+
+**Example: Same Model in Keras vs. PyTorch**
+
+**Keras**
+
+```python
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Dense
+
+model = Sequential([
+    Dense(64, activation='relu', input_shape=(10,)),
+    Dense(32, activation='relu'),
+    Dense(1, activation='sigmoid')
+])
+
+model.compile(
+    optimizer='adam',
+    loss='binary_crossentropy',
+    metrics=['accuracy']
+)
+
+model.fit(X_train, y_train, epochs=10)
+```
+
 
