@@ -451,3 +451,7 @@ PyTorch was released by **Meta (then Facebook)** in 2016 as a Python-based reimp
 
 ---
 
+## Learning Curve
+
+**PyTorch and TensorFlow can have a relatively steep learning curve compared with high-level frameworks such as Keras.**
+
