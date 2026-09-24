@@ -333,4 +333,4 @@ $$
 f(x)=\max(0,x)
 $$
 
-Range: $([0,\infty)\)$
+Range: $(0,\infty)\)$
