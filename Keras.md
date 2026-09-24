@@ -365,7 +365,7 @@ where $\Phi(x)\$ is the **cumulative distribution function (CDF) of the standard
 |---|---|---|---|
 | **Sigmoid** | (0,1) | Binary output | Vanishing gradient |
 | **Tanh** | (-1,1) | Hidden layers (older) | Vanishing gradient |
-| **ReLU** | $\([0,\infty)\)$ | Hidden layers (default) | Dying neurons |
-| **Leaky ReLU** | $\((-\infty,\infty)\)$ | Hidden layers | Extra hyperparameter |
+| **ReLU** | $\(0,\infty)\)$ | Hidden layers (default) | Dying neurons |
+| **Leaky ReLU** | $\(-\infty,\infty)\$ | Hidden layers | Extra hyperparameter |
 | **Softmax** | (0,1), sums to 1 | Multi-class output | Only for output layer |
-| **GELU** | $(\approx(-0.17,\infty)\)$ | Transformers | Computationally heavier |
+| **GELU** | $\approx(-0.17,\infty)\$ | Transformers | Computationally heavier |
