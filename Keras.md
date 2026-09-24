@@ -344,7 +344,7 @@ $$
 **Softmax**
 
 $$
-\operatorname{softmax}(x_i)=\frac{e^{x_i}}{\sum_j e^{x_j}}
+operatorname{softmax}(x_i)=\frac{e^{x_i}}{\sum_j e^{x_j}}
 $$
 
 - Converts: A vector into a probability distribution (the probabilities sum to 1)
