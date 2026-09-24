@@ -399,5 +399,8 @@ TensorFlow was released by Google in 2015 and quickly became the industry standa
 
 - Ecosystem: TensorBoard (visualization), TFX (production pipelines), Keras (built-in high-level API).
 
+**Strengths:** Deployment, scalability, tooling.
+
+**Weaknesses:** Historically harder to learn; API changed significantly between 1.x and 2.x.
 
 
