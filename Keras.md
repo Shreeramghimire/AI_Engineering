@@ -249,6 +249,7 @@ While ResNets solved the vanishing gradient problem for deep spatial networks (i
 | **Best Used For** | Problems where modeling complex long-term dependencies is important | Scenarios where computational efficiency and faster iteration are important |
 
 **How LSTM Works:** The Three-Gate System
+
 An LSTM maintains a Cell State, which acts like a conveyor belt carrying relevant information across long sequences. It modifies this conveyor belt using three distinct mathematical gates:
 
 - Forget Gate: Decides what information from the past to throw away. It looks at the new input and the previous hidden state, outputting a number between 0 (completely discard) and 1 (completely keep).
@@ -256,3 +257,7 @@ An LSTM maintains a Cell State, which acts like a conveyor belt carrying relevan
 - Input Gate: Decides what new information to store in the cell state. It determines which values to update and creates a vector of new candidate values.
 
 - Output Gate: Decides what the next hidden state (and output) should be. It filters the updated cell state to only output the parts relevant to the current step.
+
+**How GRU Works:** The Streamlined Alternative
+
+The GRU is a newer, streamlined variation of the LSTM. It merges the cell state and hidden state, and reduces the architecture down to just two gates:Update Gate: Acts as a combined forget and input gate. It simultaneously determines how much past information to keep and how much new information to inject.Reset Gate: Decides how much of the past information to completely forget before processing the new input.
