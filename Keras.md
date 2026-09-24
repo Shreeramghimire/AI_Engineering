@@ -415,3 +415,7 @@ PyTorch was released by **Meta (then Facebook)** in 2016 as a Python-based reimp
   
 - **Pythonic** – PyTorch feels similar to writing NumPy code, with automatic differentiation built in.
   
+- **GPU support** – Provides CUDA integration for GPU acceleration. Data and models can be moved to a GPU using `.cuda()` or `.to(device)`.
+
+- **Research-friendly** – Its flexibility makes it convenient for experimenting with novel architectures and custom models.
+
