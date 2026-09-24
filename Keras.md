@@ -564,3 +564,42 @@ The Keras example requires significantly less code because Keras provides high-l
 
 
 ## Data Preparation for Keras
+
+### Preparing Data
+
+*Before using Keras, you need to prepare your data and organize it in the appropriate format.*
+
+Keras expects data in specific formats depending on the task:
+
+- **Inputs $(X\)$** – NumPy arrays or tensors:
+  - **Tabular data:** `(num_samples, num_features)`
+  - **Images:** `(num_samples, height, width, channels)`
+- **Targets $(y\)$** – NumPy arrays. The format depends on the task:
+  - **Regression** – Continuous values, shape `(num_samples,)` or `(num_samples, 1)`.
+  - **Binary classification** – 0 or 1, shape `(num_samples,)` or `(num_samples, 1)`.
+  - **Multi-class classification** – One-hot encoded, shape `(num_samples, num_classes)`.
+
+### Common Preprocessing Steps
+
+- Handle missing values
+- Normalize or standardize numerical features
+- Encode categorical variables
+- Split the data into training, validation, and test sets
+
+
+### Predictors and Target
+
+*A dataset can be divided into predictors and a target.*
+
+This is the fundamental setup for **supervised learning**:
+
+- **Predictors (features, $\(X\)$)** – The input variables the model uses to make predictions.  
+  Examples: age, income, education level.
+- **Target (label, $\(y\)$)** – The output variable the model tries to predict.  
+  Example: whether a customer will churn (`yes`/`no`).
+
+### In Python
+
+```python
+X = df.drop('target_column', axis=1)  # Predictors
+y = df['target_column']               # Target
