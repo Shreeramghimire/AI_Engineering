@@ -411,4 +411,7 @@ PyTorch was released by **Meta (then Facebook)** in 2016 as a Python-based reimp
 
 **Key Characteristics**
 
-
+- **Dynamic computation graph** – The graph is built on the fly as operations execute. This makes debugging intuitive because you can use standard Python debugging tools. It also works well with variable-length inputs, which are common in NLP.
+  
+- **Pythonic** – PyTorch feels similar to writing NumPy code, with automatic differentiation built in.
+  
