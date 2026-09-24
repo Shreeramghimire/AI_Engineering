@@ -267,3 +267,15 @@ The GRU is a newer, streamlined variation of the LSTM. It merges the cell state 
 - Reset Gate: Decides how much of the past information to completely forget before processing the new input.
 
 While LSTMs and GRUs revolutionized sequence modeling, they process data sequentially (step by step), which makes them difficult to parallelize on modern GPU hardware. Because of this limitation, they have largely been superseded by Transformers (like GPT and BERT) for massive Natural Language Processing tasks. However, LSTMs and GRUs remain incredibly useful for lightweight applications, real-time streaming data, edge devices, and specific industrial time-series forecasting where computational power is limited.
+
+
+### Activation function:
+An activation function is a mathematical formula applied to the output of every neuron in a neural network. Its primary purpose is to introduce non-linearity into the network, allowing it to learn complex, real-world patterns.
+
+Without activation functions, no matter how many hundreds of layers you stack together, a neural network would just behave like a giant linear regression model, only capable of separating data with straight lines.
+
+Inside a neural network, a single neuron performs a two-step calculation:
+
+1. Linear Combination: It multiplies all inputs by their respective weights, adds them together, and adds a bias:
+
+   $$[z=(\text{weight}_{1}\times x_{1})+(\text{weight}_{2}\times x_{2})+\dots +\text{bias}\]$$
