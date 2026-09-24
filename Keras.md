@@ -616,3 +616,9 @@ Keras and most machine learning frameworks require numerical targets.
 For binary classification, the target is typically represented as 0 or 1.
 
 For example:
+
+Yes → 1
+No  → 0
+
+If the original labels are strings such as "yes"/"no" or "cat"/"dog", they must be encoded into numerical values.
+
