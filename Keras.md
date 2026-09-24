@@ -341,3 +341,11 @@ $$
 f(x)=\max(\alpha x,x), \qquad \alpha \approx 0.01
 $$
 
+**Softmax**
+
+$$
+\operatorname{softmax}(x_i)=\frac{e^{x_i}}{\sum_j e^{x_j}}
+$$
+
+- Converts: A vector into a probability distribution (the probabilities sum to 1)
+- Used in: Multi-class classification output layers
