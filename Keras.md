@@ -291,4 +291,6 @@ $$
 Most real-world data is non-linear. Think of predicting housing prices, identifying faces, or driving autonomous cars—the relationships between variables are full of twists, curves, and sudden thresholds. 
 A linear model cannot learn these curves. By applying a non-linear activation function (like ReLU or GELU), the network gains the ability to warp, bend, and shape its decision boundaries to fit virtually any complex dataset. This mathematical trait is known as the Universal **Approximation Theorem**.
 
+**Modern Hidden Layer Standards**
 
+These are used between the input and output layers to help the network learn internal features. ReLU (Rectified Linear Unit): The reigning champion for computer vision. Formula: \(\max(0, z)\). It turns negative numbers into 0 and leaves positive numbers exactly as they are. It is incredibly fast and efficient. GELU (Gaussian Error Linear Unit): The standard choice for modern LLMs like GPT and BERT. It acts like a smooth version of ReLU, allowing a tiny bit of negative information to pass through, which helps with language understanding. 
