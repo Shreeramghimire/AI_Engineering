@@ -387,7 +387,7 @@ TensorFlow is used in the production of deep learning models and has a very larg
 
 TensorFlow was released by Google in 2015 and quickly became the industry standard for deploying models at scale. 
 
-**Key characteristics:**
+**Key characteristics**
 
 - Production-ready: Tools like **TensorFlow Serving, TensorFlow Lite (mobile/edge), and TensorFlow.js** (browser) allow deployment across platforms.
 
@@ -403,4 +403,7 @@ TensorFlow was released by Google in 2015 and quickly became the industry standa
 
 **Weaknesses:** Historically harder to learn; API changed significantly between 1.x and 2.x.
 
+#### PyTorch
+
+PyTorch is based on the Torch framework in Lua and supports machine learning algorithms running on GPUs. It is widely used in academic research and machine learning experimentation.
 
