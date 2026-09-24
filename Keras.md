@@ -239,3 +239,11 @@ The Concept of skip connections (or shortcut connections), which allow training 
 LSTMs (Long Short-Term Memory) and GRUs (Gated Recurrent Units) are specialized types of Recurrent Neural Networks (RNNs) designed to process sequential data, such as text, speech, time-series data, and video.
 
 While ResNets solved the vanishing gradient problem for deep spatial networks (images), LSTMs and GRUs were invented to solve the same problem for deep temporal networks (sequences). Standard RNNs struggle to retain information from many steps back because gradients shrink exponentially over time; LSTMs and GRUs use an internal mechanism called gates to regulate the flow of information and maintain a long-term memory.
+
+| **Feature** | **LSTM (Long Short-Term Memory)** | **GRU (Gated Recurrent Unit)** |
+|---|---|---|
+| **Year Introduced** | 1997 (by Hochreiter & Schmidhuber) | 2014 (by Cho et al.) |
+| **Internal States** | Uses **two states**: Cell State $(\(c_t\))$ and Hidden State $(\(h_t\))$ | Uses **one state**: Hidden State $(\(h_t\))$ |
+| **Number of Gates** | **Three gates**: Forget, Input, and Output gates | **Two gates**: Reset and Update gates |
+| **Parameters** | More parameters (typically slower to train and requires more memory) | Fewer parameters (typically faster to train and more memory-efficient) |
+| **Best Used For** | Problems where modeling complex long-term dependencies is important | Scenarios where computational efficiency and faster iteration are important |
