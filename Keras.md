@@ -311,4 +311,11 @@ These are used between the input and output layers to help the network learn int
 
 - Linear (No Activation): Used for regression tasks (e.g., predicting the exact numeric price of a house), where the output can be any arbitrary number.
 
+**Sigmoid**
+
+$$
+\sigma(x)=\frac{1}{1+e^{-x}}
+$$
+
+Range: (0,1)
 
