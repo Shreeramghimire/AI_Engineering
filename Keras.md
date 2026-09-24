@@ -431,3 +431,23 @@ PyTorch was released by **Meta (then Facebook)** in 2016 as a Python-based reimp
 
 **Strengths and Weaknesses**
 
+**Strengths:**
+- Flexibility
+  
+- Research and experimentation
+
+- Pythonic interface
+  
+- Easy debugging
+  
+- Strong GPU support
+
+**Weaknesses:**
+- Requires a good understanding of tensors, automatic differentiation, and training loops
+  
+- Can involve more code than high-level frameworks such as Keras
+  
+- Deployment tooling has historically been less straightforward, although the ecosystem has improved significantly
+
+---
+
