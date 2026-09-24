@@ -455,3 +455,19 @@ PyTorch was released by **Meta (then Facebook)** in 2016 as a Python-based reimp
 
 **PyTorch and TensorFlow can have a relatively steep learning curve compared with high-level frameworks such as Keras.**
 
+Both frameworks require you to understand concepts such as:
+
+- **Tensors** – Multi-dimensional arrays, similar to NumPy arrays, with support for GPU acceleration.
+  
+- **Computation graphs** – Structures that represent how operations are connected for automatic differentiation.
+  
+- **Device management** – Moving data and models between the CPU and GPU.
+  
+- **Training loops** – Controlling the forward pass, loss calculation, backpropagation, and optimizer updates.
+
+**PyTorch vs. Keras Training**
+
+
+
+
+
