@@ -639,3 +639,7 @@ For example, with three classes:
 This representation works naturally with a **softmax** output layer, which produces a probability for each class.
 
 For binary classification, a **sigmoid** output layer is commonly used to produce the probability of the positive class.
+
+### to_categorical() Function
+
+The to_categorical() function from the Keras utilities package converts integer class labels into one-hot encoded vectors.
