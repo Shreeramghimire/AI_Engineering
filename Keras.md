@@ -381,7 +381,7 @@ where $\Phi(x)\$ is the **cumulative distribution function (CDF) of the standard
 - **TensorFlow / PyTorch** = the **engine** (raw power, full control, more code)
 - **Keras** = the **steering wheel and dashboard** (easy interface on top of the engine)
 
-#### TensorFlow
+### TensorFlow
 
 TensorFlow is used in the production of deep learning models and has a very large community of users.
 
@@ -403,7 +403,7 @@ TensorFlow was released by Google in 2015 and quickly became the industry standa
 
 **Weaknesses:** Historically harder to learn; API changed significantly between 1.x and 2.x.
 
-#### PyTorch
+### PyTorch
 
 PyTorch is based on the Torch framework in Lua and supports machine learning algorithms running on GPUs. It is widely used in academic research and machine learning experimentation.
 
@@ -451,7 +451,7 @@ PyTorch was released by **Meta (then Facebook)** in 2016 as a Python-based reimp
 
 ---
 
-## Learning Curve
+### Learning Curve
 
 **PyTorch and TensorFlow can have a relatively steep learning curve compared with high-level frameworks such as Keras.**
 
