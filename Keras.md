@@ -561,3 +561,6 @@ for epoch in range(10):
 ```
 
 The Keras example requires significantly less code because Keras provides high-level abstractions for model construction, compilation, training, evaluation, and prediction.
+
+
+## Data Preparation for Keras
