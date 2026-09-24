@@ -643,3 +643,33 @@ For binary classification, a **sigmoid** output layer is commonly used to produc
 ### to_categorical() Function
 
 The to_categorical() function from the Keras utilities package converts integer class labels into one-hot encoded vectors.
+
+**Syntax**
+
+```python
+from tensorflow.keras.utils import to_categorical
+
+y_encoded = to_categorical(y, num_classes=None)
+
+```
+
+**Example**
+```python
+from tensorflow.keras.utils import to_categorical
+import numpy as np
+
+y = np.array([0, 1, 2, 1, 0])
+
+y_encoded = to_categorical(y)
+
+print(y_encoded)
+```
+
+**Output:**
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]
+ [1. 0. 0.]]
+
+ 
