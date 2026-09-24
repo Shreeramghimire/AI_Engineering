@@ -407,3 +407,8 @@ TensorFlow was released by Google in 2015 and quickly became the industry standa
 
 PyTorch is based on the Torch framework in Lua and supports machine learning algorithms running on GPUs. It is widely used in academic research and machine learning experimentation.
 
+PyTorch was released by **Meta (then Facebook)** in 2016 as a Python-based reimplementation of the **Torch** library, which was originally written in **Lua**.
+
+**Key Characteristics**
+
+
