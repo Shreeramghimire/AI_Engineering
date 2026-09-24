@@ -378,4 +378,5 @@ where $\Phi(x)\$ is the **cumulative distribution function (CDF) of the standard
 | **PyTorch** | Low-level | Research, experimentation, flexibility | Meta (Facebook) |
 | **Keras** | High-level | Fast prototyping, ease of use | Now integrated into TensorFlow |
 
-
+- **TensorFlow / PyTorch** = the **engine** (raw power, full control, more code)
+- **Keras** = the **steering wheel and dashboard** (easy interface on top of the engine)
