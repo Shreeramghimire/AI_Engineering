@@ -334,3 +334,10 @@ f(x)=\max(0,x)
 $$
 
 Range: $(0,\infty)\$
+
+**Leaky ReLU**
+
+$$
+f(x)=\max(\alpha x,x), \qquad \alpha \approx 0.01
+$$
+
