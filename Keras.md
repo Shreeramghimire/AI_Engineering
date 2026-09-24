@@ -623,3 +623,10 @@ No  → 0
 
 If the original labels are strings such as "yes"/"no" or "cat"/"dog", they must be encoded into numerical values.
 
+#### Multi-Class Classification
+
+For multi-class classification, the target can be one-hot encoded: a vector of 0s and 1s where the correct class is represented by 1.
+
+For example, with three classes:
+
+
