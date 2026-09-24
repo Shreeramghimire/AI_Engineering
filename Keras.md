@@ -349,3 +349,14 @@ $$
 
 - Converts: A vector into a probability distribution (the probabilities sum to 1)
 - Used in: Multi-class classification output layers
+
+**GELU / Swish**
+
+- Smooth activation functions used in modern neural networks, including transformer architectures such as BERT and GPT.
+- GELU:
+
+$$
+\operatorname{GELU}(x)=x\Phi(x)
+$$
+
+where $(\Phi(x)\)$ is the **cumulative distribution function (CDF) of the standard Gaussian distribution**.
