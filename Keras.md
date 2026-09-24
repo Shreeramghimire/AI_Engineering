@@ -395,4 +395,6 @@ TensorFlow was released by Google in 2015 and quickly became the industry standa
 
 - Eager execution (TF 2.x): Now executes operations immediately, making it feel more like PyTorch.
 
+- Large community: Extensive documentation, tutorials, Stack Overflow answers, and pre-trained models.
+
 
