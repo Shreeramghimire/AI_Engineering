@@ -232,4 +232,7 @@ The Concept of skip connections (or shortcut connections), which allow training 
 
 - Solves Degradation: Adding more layers to traditional neural networks often leads to higher training error, known as the degradation problem. ResNets ensure that deeper models perform at least as well as shallower ones.
 
+- Common variants include ResNet-18, ResNet-34, ResNet-50, ResNet-101, and ResNet-152, where numbers indicate the layer depth.
+
+
 
