@@ -419,3 +419,15 @@ PyTorch was released by **Meta (then Facebook)** in 2016 as a Python-based reimp
 
 - **Research-friendly** – Its flexibility makes it convenient for experimenting with novel architectures and custom models.
 
+**Why Researchers Use PyTorch**
+
+- Faster iteration cycles
+  
+- Easier implementation of custom layers and unconventional models
+  
+- Convenient debugging and experimentation
+  
+- Strong integration with the Python ecosystem
+
+**Strengths and Weaknesses**
+
