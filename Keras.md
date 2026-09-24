@@ -225,3 +225,8 @@ $$W\sim U\left(-\sqrt{\frac{6}{n_{in}}},\sqrt{\frac{6}{n_{in}}}\right)\$$
 The Concept of skip connections (or shortcut connections), which allow training of incredibly deep neural networks without suffering from the vanishing gradient problem. Introduced by Kaiming He et al. in 2015. 
 
 **Fundamentals:**
+
+- Skip Connections: ResNet uses shortcut paths (or skip connections) that allow the input of a layer to bypass one or more intermediate layers and connect directly to a later layer. It provides an uninterrupted path for gradients to flow backward during training, preventing signal loss.
+
+
+
