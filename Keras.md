@@ -228,7 +228,7 @@ The Concept of skip connections (or shortcut connections), which allow training 
 
 - Skip Connections: ResNet uses shortcut paths (or skip connections) that allow the input of a layer to bypass one or more intermediate layers and connect directly to a later layer. It provides an uninterrupted path for gradients to flow backward during training, preventing signal loss.
 
-- Residual Learning: Instead of learning the absolute mapping from input to output, the layers learn a residual function—the difference or change needed relative to the input. It made training networks with 50, 101, 152, or even over 1,000 layers practical and effective.
+- Residual Learning: Instead of learning the absolute mapping from input to output, the layers learn a residual function, the difference or change needed relative to the input. It made training networks with 50, 101, 152, or even over 1,000 layers practical and effective.
 
 - Solves Degradation: Adding more layers to traditional neural networks often leads to higher training error, known as the degradation problem. ResNets ensure that deeper models perform at least as well as shallower ones.
 
