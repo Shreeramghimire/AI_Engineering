@@ -234,7 +234,7 @@ The Concept of skip connections (or shortcut connections), which allow training 
 
 -  Widely used as a backbone for image classification, object detection, instance segmentation, and medical image analysis.
 
-**What are LSTMs and GRUs?
+**What are LSTMs and GRUs?**
 
 LSTMs (Long Short-Term Memory) and GRUs (Gated Recurrent Units) are specialized types of Recurrent Neural Networks (RNNs) designed to process sequential data, such as text, speech, time-series data, and video.
 
