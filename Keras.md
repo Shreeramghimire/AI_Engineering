@@ -160,8 +160,6 @@ Normalization: Apply batch normalization to stabilize the distribution of layer 
 **What is initialization?**
 Initialization includes setting the initial values of weights for the models, neural networks, or other deep learning architectures.
 
-
-
 **Xavier initialization**, also known as Glorot initialization, is a technique designed to keep the variance of activations and gradients relatively constant across all layers of a deep neural network, preventing gradients from becoming too small (vanishing) or too large (exploding).
 
 Core objective: Ensure that the variance of the outputs of a layer equals the variance of its inputs.
@@ -236,4 +234,8 @@ The Concept of skip connections (or shortcut connections), which allow training 
 
 -  Widely used as a backbone for image classification, object detection, instance segmentation, and medical image analysis.
 
+**What are LSTMs and GRUs?
 
+LSTMs (Long Short-Term Memory) and GRUs (Gated Recurrent Units) are specialized types of Recurrent Neural Networks (RNNs) designed to process sequential data, such as text, speech, time-series data, and video.
+
+While ResNets solved the vanishing gradient problem for deep spatial networks (images), LSTMs and GRUs were invented to solve the same problem for deep temporal networks (sequences). Standard RNNs struggle to retain information from many steps back because gradients shrink exponentially over time; LSTMs and GRUs use an internal mechanism called gates to regulate the flow of information and maintain a long-term memory.
