@@ -387,9 +387,9 @@ TensorFlow is used in the production of deep learning models and has a very larg
 
 TensorFlow was released by Google in 2015 and quickly became the industry standard for deploying models at scale. 
 
-Key characteristics:
+**Key characteristics:**
 
-- Production-ready – Tools like TensorFlow Serving, TensorFlow Lite (mobile/edge), and TensorFlow.js (browser) allow deployment across platforms.
+- Production-ready: Tools like **TensorFlow Serving, TensorFlow Lite (mobile/edge), and TensorFlow.js** (browser) allow deployment across platforms.
 
 Static computation graph (in TF 1.x) – You define the graph first, then run it. This made optimization easier but debugging harder.
 
