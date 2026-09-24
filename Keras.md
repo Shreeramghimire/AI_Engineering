@@ -319,3 +319,10 @@ $$
 
 Range: (0,1)
 
+**Tanh**
+
+$$
+\tanh(x)=\frac{e^x-e^{-x}}{e^x+e^{-x}}
+$$
+
+Range: (-1,1)
