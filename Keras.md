@@ -629,4 +629,10 @@ For multi-class classification, the target can be one-hot encoded: a vector of 0
 
 For example, with three classes:
 
+| **Original Label** | **One-Hot Encoded** |
+| ------------------ | ------------------- |
+| Cat                | `[1, 0, 0]`         |
+| Dog                | `[0, 1, 0]`         |
+| Bird               | `[0, 0, 1]`         |
+
 
