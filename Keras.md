@@ -234,5 +234,6 @@ The Concept of skip connections (or shortcut connections), which allow training 
 
 - Common variants include ResNet-18, ResNet-34, ResNet-50, ResNet-101, and ResNet-152, where numbers indicate the layer depth.
 
+-  Widely used as a backbone for image classification, object detection, instance segmentation, and medical image analysis.
 
 
