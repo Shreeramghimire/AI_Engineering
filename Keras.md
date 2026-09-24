@@ -326,3 +326,11 @@ $$
 $$
 
 Range: (-1,1)
+
+**ReLU (Rectified Linear Unit)**
+
+$$
+f(x)=\max(0,x)
+$$
+
+Range: $([0,\infty)\)$
