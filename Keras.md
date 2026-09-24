@@ -603,3 +603,16 @@ This is the fundamental setup for **supervised learning**:
 ```python
 X = df.drop('target_column', axis=1)  # Predictors
 y = df['target_column']               # Target
+```
+
+### Binary Encoding of Target
+
+When using Keras for classification problems, the target variable needs to be represented in a numerical format.
+
+Keras and most machine learning frameworks require numerical targets.
+
+#### Binary Classification
+
+For binary classification, the target is typically represented as 0 or 1.
+
+For example:
