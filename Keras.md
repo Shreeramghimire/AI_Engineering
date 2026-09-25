@@ -763,3 +763,5 @@ It's called "shallow" because information passes through only a single transform
 2. Cannot learn hierarchical features (e.g., edges → shapes → objects in images)
 
 3. Only takes vector inputs — data must be pre-processed into a flat feature vector
+
+### Deep Neural Network
