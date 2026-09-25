@@ -675,6 +675,14 @@ print(y_encoded)
 
 **Step 1: Import libraries**
 ```python
+import numpy as np
+import pandas as pd
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.utils import to_categorical
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+```
 
-
- 
+**Step 2: Load and prepare data**
+```python
