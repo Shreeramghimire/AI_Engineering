@@ -805,3 +805,11 @@ The sudden boom in the deep learning field can be attributed to three main facto
 | **Computational power** | GPUs and TPUs made parallel matrix operations fast and affordable. Training a deep network that took months in 2010 can now take hours. |
 
 ### Convolutional Neural Networks (CNNs)
+
+Convolutional neural networks make the explicit assumption that the inputs are images. CNNs are designed with spatial structure in mind. They assume:
+
+- Nearby pixels are related (locality)
+
+- Patterns can appear anywhere in the image (translation invariance)
+
+- The input has a grid-like topology (2D for images, 1D for audio, 3D for video)
