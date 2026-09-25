@@ -951,3 +951,20 @@ Average pooling output:
 Max pooling is preferred because it highlights the most salient features and works well in practice.
 
 #### Fully Connected Layer
+
+In the fully connected layer, we flatten the output of the last convolutional layer and connect every node of the current layer with every other node of the next layer.
+
+After several Conv + ReLU + Pool blocks, the feature maps are flattened into a 1D vector and passed through one or more fully connected (Dense) layers.
+
+Convolutional layers output 3D tensors (height, width, channels). Dense layers expect 1D vectors. Flattening bridges the two.
+
+Role of the FC layer:
+
+- Combines all the learned features to make a final decision.
+
+- The last FC layer typically has one node per class (with softmax) for classification.
+
+Input → [Conv → ReLU → Pool] × N → Flatten → [Dense → ReLU] × M → Dense (output)
+
+
+
