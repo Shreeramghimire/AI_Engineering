@@ -1014,3 +1014,8 @@ RNNs are good at modeling patterns and sequences of data, such as texts, genomes
 
 RNNs excel whenever **context from previous inputs** improves predictions.
 
+#### LSTM 
+
+Popular RNNs type
+
+Plain RNNs suffer from the vanishing gradient problem; they struggle to remember information from many time steps back. LSTMs (Hochreiter & Schmidhuber, 1997) solve this with a gating mechanism.
