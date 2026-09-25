@@ -711,3 +711,6 @@ model = Sequential([
     Dense(y_train.shape[1], activation='softmax')  # output layer
 ])
 ```
+
+**Step 4: Compile the model**
+```python
