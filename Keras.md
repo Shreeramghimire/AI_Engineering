@@ -1038,3 +1038,20 @@ Why it works: The cell state acts as a "conveyor belt" that lets gradients flow 
 
 - Bidirectional LSTM: processes the sequence in both directions.
 
+**LSTM Applications**
+
+LSTMs are used for applications such as image generation, handwriting generation, automatic image captioning, and automatic video descriptions.
+
+
+- Image generation: LSTMs can generate images pixel-by-pixel or as sequences of patches (e.g., DRAW, PixelRNN).
+
+- Handwriting generation: Given a text, generate realistic handwriting as a sequence of pen strokes (Graves, 2013).
+
+- Image captioning: A CNN extracts image features, and an LSTM generates a descriptive sentence word by word.
+
+- Video description: A CNN processes frames, and an LSTM generates a caption for the video.
+
+- Machine translation: Encoder LSTM reads the source sentence, decoder LSTM produces the translation.
+
+- Speech recognition: LSTM processes audio frames and outputs text.
+
