@@ -1055,3 +1055,33 @@ LSTMs are used for applications such as image generation, handwriting generation
 
 - Speech recognition: LSTM processes audio frames and outputs text.
 
+
+### Autoencoders
+
+Autoencoding is a data compression algorithm where the compression and decompression functions are learned automatically from data.
+
+An autoencoder is a neural network trained to reconstruct its own input. It consists of two parts:
+
+- Encoder: compresses the input into a low-dimensional latent representation (also called bottleneck or code).
+
+- Decoder: reconstructs the original input from the latent representation.
+
+Training objective: Minimize the difference between input and output (reconstruction loss, e.g., MSE).
+
+Key insight: The network must learn a compact representation that captures the most important features of the data — because it has to reconstruct the input from that compressed code.
+
+**Autoencoders are data-specific.**
+
+Unlike general-purpose compression algorithms (ZIP, JPEG), an autoencoder is trained on a specific dataset and learns to compress that type of data well.
+
+- An autoencoder trained on faces won't compress landscapes effectively.
+
+- An autoencoder trained on English text won't work on Chinese text.
+
+This is because the learned latent representation is tailored to the patterns in the training data.
+
+
+**Applications**
+
+Applications of autoencoders include data denoising and dimensionality reduction for data visualization.
+
