@@ -44,3 +44,13 @@ Interpretation: There's a 92.4% probability this email is spam.
 | A | 3.0 | 0.953 | 95.3% spam |
 | B | 0.0 | 0.500 | 50% spam (uncertain) |
 | C | −2.0 | 0.119 | 11.9% spam (likely not spam) |
+
+More real-world examples:
+
+- Medical diagnosis: Probability a patient has a disease given symptoms
+
+- Credit card fraud: Probability a transaction is fraudulent
+
+- Customer churn: Probability a customer will cancel their subscription
+
+- Ad click prediction: Probability a user will click on an ad
