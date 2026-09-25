@@ -720,3 +720,6 @@ model.compile(
     metrics=['accuracy']
 )
 ```
+
+**Step 5: Train the model**
+```python
