@@ -839,3 +839,7 @@ Beyond vision, **CNNs** are also used for:
 - Natural language processing (1D convolutions over text)
 
 - Time series analysis
+
+#### Input Shape
+
+The input to a convolutional neural network is mostly an (n x m x 1) for grayscale images or an (n x m x 3) for colored images.
