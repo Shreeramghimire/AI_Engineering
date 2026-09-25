@@ -843,3 +843,7 @@ Beyond vision, **CNNs** are also used for:
 #### Input Shape
 
 The input to a convolutional neural network is mostly an (n x m x 1) for grayscale images or an (n x m x 3) for colored images.
+
+CNN inputs are 3D tensors: (height, width, channels)
+
+
