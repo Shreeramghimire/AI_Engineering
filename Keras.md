@@ -846,4 +846,9 @@ The input to a convolutional neural network is mostly an (n x m x 1) for graysca
 
 CNN inputs are 3D tensors: (height, width, channels)
 
-
+| **Type** | **Shape** | **Channels** |
+|---|---|---|
+| **Grayscale** | `(n, m, 1)` | 1 (intensity) |
+| **Color (RGB)** | `(n, m, 3)` | 3 (red, green, blue) |
+| **RGBA** | `(n, m, 4)` | 4 (RGB + alpha/transparency) |
+| **Hyperspectral** | `(n, m, k)` | k (many wavelengths) |
