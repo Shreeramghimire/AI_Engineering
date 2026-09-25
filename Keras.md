@@ -765,3 +765,18 @@ It's called "shallow" because information passes through only a single transform
 3. Only takes vector inputs — data must be pre-processed into a flat feature vector
 
 ### Deep Neural Network
+
+A network with many hidden layers and many neurons per layer is considered a deep neural network.
+
+A deep neural network (DNN) stacks many hidden layers. Each layer learns increasingly abstract representations:
+
+- Layer 1 – low-level features (edges, pixel gradients)
+
+- Layer 2 – mid-level features (textures, shapes)
+
+- Layer 3+ – high-level features (objects, faces, semantic concepts)
+
+This hierarchical feature learning is what makes deep networks powerful. Instead of hand-engineering features, the network discovers them automatically.
+
+Key advantage: Depth allows the network to represent complex functions with far fewer neurons than a shallow network would need.
+
