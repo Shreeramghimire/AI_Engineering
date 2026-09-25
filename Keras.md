@@ -854,3 +854,32 @@ CNN inputs are 3D tensors: (height, width, channels)
 | **Hyperspectral** | `(n, m, k)` | k (many wavelengths) |
 
 When we feed a batch of images, the shape becomes (batch_size, n, m, channels): e.g., (32, 224, 224, 3) for a batch of 32 RGB images.
+
+#### Convolutional Layer
+
+In the convolutional layer, we define filters and compute the convolution between the defined filters and each of the three images.
+
+A filter (also called a kernel) is a small matrix of weights, e.g., 3×3 or 5×5. The convolution operation slides the filter across the input image and computes a dot product at each position, producing a feature map.
+
+How it works:
+
+- Place the filter at the top-left corner of the image.
+
+- Multiply each filter value by the corresponding pixel value, sum them up.
+
+- Slide the filter by a stride (e.g., 1 pixel) and repeat.
+
+- The result is a 2D feature map showing where the filter's pattern appears.
+
+For RGB images: Each filter has the same depth as the input (3 channels). The convolution sums across all three channels, producing a single feature map per filter.
+
+**Key parameters:**
+
+Number of filters: Each filter detects a different pattern (edges, curves, colors).
+
+Filter size – 3×3, 5×5, 7×7, etc.
+
+Stride: How far the filter moves each step.
+
+Padding: Adding zeros around the border to preserve spatial dimensions.
+
