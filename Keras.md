@@ -940,3 +940,10 @@ Max pooling output:
 [6, 8]
 [9, 7]
 ```
+
+Average pooling output:
+
+```python
+[3.75, 5.25]
+[4.75, 4.5]
+```
