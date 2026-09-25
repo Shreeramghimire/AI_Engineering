@@ -918,5 +918,8 @@ Typical setup: A 2×2 pooling window with stride 2 halves the spatial dimensions
 
 The two types of pooling widely used in convolutional neural networks are max pooling and average pooling.
 
-
+| **Type** | **Operation** | **Effect** |
+|---|---|---|
+| **Max pooling** | Takes the maximum value in each window | Preserves the strongest features (edges, textures); most common |
+| **Average pooling** | Takes the average value in each window | Smooths features; less common but used in some architectures |
 
