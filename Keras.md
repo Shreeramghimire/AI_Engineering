@@ -731,4 +731,12 @@ history = model.fit(
     verbose=1
 )
 ```
+**Step 6: Evaluate and predict**
+```python
+loss, accuracy = model.evaluate(X_test, y_test)
+print(f'Test accuracy: {accuracy:.4f}')
+
+predictions = model.predict(X_test)
+predicted_classes = np.argmax(predictions, axis=1)
+```
 
