@@ -884,3 +884,6 @@ Stride: How far the filter moves each step.
 Padding: Adding zeros around the border to preserve spatial dimensions.
 
 #### ReLU in Convolutional Layers
+
+A convolutional layer also consists of ReLUs, which filter the output of the convolutional step, passing only positive values and turning any negative values to 0.
+
