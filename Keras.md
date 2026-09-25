@@ -816,3 +816,26 @@ Convolutional neural networks make the explicit assumption that the inputs are i
 
 This assumption allows CNNs to exploit weight sharing: the same filter is applied across the entire image, drastically reducing the number of parameters compared to a fully connected network.
 
+Convolutional neural networks are best for solving problems related to image recognition, object detection, and other computer vision applications.
+
+**CNNs dominate computer vision tasks:**
+
+- Image classification: "Is this a cat or a dog?" (ResNet, VGG, EfficientNet)
+
+- Object detection: "Where are the cars and pedestrians in this scene?" (YOLO, Faster R-CNN)
+
+- Semantic segmentation: "Label every pixel with its object class" (U-Net, DeepLab)
+
+- Face recognition: Identifying individuals from photos
+
+- Medical imaging: Detecting tumors in X-rays or MRIs
+
+- Autonomous driving: Recognizing lanes, signs, and obstacles
+
+Beyond vision, **CNNs** are also used for:
+
+- Audio processing (spectrogram classification)
+
+- Natural language processing (1D convolutions over text)
+
+- Time series analysis
