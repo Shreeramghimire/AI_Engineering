@@ -1019,3 +1019,22 @@ RNNs excel whenever **context from previous inputs** improves predictions.
 Popular RNNs type
 
 Plain RNNs suffer from the vanishing gradient problem; they struggle to remember information from many time steps back. LSTMs (Hochreiter & Schmidhuber, 1997) solve this with a gating mechanism.
+
+**LSTM components:**
+
+- Cell state: the long-term memory, passed through the chain with minimal modification.
+
+- Forget gate: decides what to discard from the cell state.
+
+- Input gate: decides what new information to store.
+
+- Output gate: decides what to output as the hidden state.
+
+Why it works: The cell state acts as a "conveyor belt" that lets gradients flow unchanged across many time steps, avoiding vanishing gradients.
+
+**Variants:**
+
+- GRU (Gated Recurrent Unit): simpler, faster, often comparable performance.
+
+- Bidirectional LSTM: processes the sequence in both directions.
+
