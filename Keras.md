@@ -1093,3 +1093,25 @@ Applications of autoencoders include data denoising and dimensionality reduction
 | **Feature extraction** | Use the encoder's latent representation as features for another model. |
 | **Generative modeling** | Variational autoencoders (VAEs) can generate new samples by sampling from the latent space. |
 
+#### Encoder-Decoder Pipeline
+
+Autoencoding can take an image as an input, use an encoder to find the optimal compressed representation of the input image, and then use a decoder to restore the original image.
+
+Input Image → [Encoder] → Latent Code (bottleneck) → [Decoder] → Reconstructed Image
+
+**Example:**
+
+- Input: 28×28 grayscale image (784 pixels)
+
+- Encoder: compresses to a 32-dimensional latent vector
+
+- Decoder: reconstructs the 784-pixel image from those 32 numbers
+
+The bottleneck forces the network to learn a compressed, meaningful representation. If the bottleneck is too small, reconstruction is poor. If it's too large, the network may just memorize the input (identity function).
+
+#### Restricted Boltzmann Machines
+
+A popular type of autoencoder is restricted Boltzmann machines.
+
+
+
