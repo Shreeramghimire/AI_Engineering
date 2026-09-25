@@ -37,4 +37,10 @@ $$
 \sigma(2.5)=\frac{1}{1+e^{-2.5}}\approx 0.924
 $$
 
+Interpretation: There's a 92.4% probability this email is spam.
 
+| **Email** | **\(z\) (raw score)** | **\(\sigma(z)\)** | **Interpretation** |
+|---|---:|---:|---|
+| A | 3.0 | 0.953 | 95.3% spam |
+| B | 0.0 | 0.500 | 50% spam (uncertain) |
+| C | −2.0 | 0.119 | 11.9% spam (likely not spam) |
