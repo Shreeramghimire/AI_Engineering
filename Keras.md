@@ -702,3 +702,6 @@ X_test = scaler.transform(X_test)
 y_train = to_categorical(y_train)
 y_test = to_categorical(y_test)
 ```
+
+**Step 3: Build the model**
+```python
