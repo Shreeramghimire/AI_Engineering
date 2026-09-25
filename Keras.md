@@ -714,3 +714,9 @@ model = Sequential([
 
 **Step 4: Compile the model**
 ```python
+model.compile(
+    optimizer='adam',
+    loss='categorical_crossentropy',
+    metrics=['accuracy']
+)
+```
