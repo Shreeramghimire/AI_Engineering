@@ -923,3 +923,6 @@ The two types of pooling widely used in convolutional neural networks are max po
 | **Max pooling** | Takes the maximum value in each window | Preserves the strongest features (edges, textures); most common |
 | **Average pooling** | Takes the average value in each window | Smooths features; less common but used in some architectures |
 
+Example (2×2 window, stride 2):
+
+Input:
