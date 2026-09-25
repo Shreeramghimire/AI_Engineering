@@ -796,3 +796,7 @@ Deep networks can consume raw data directly:
 
 This means deep networks preserve the structure of the data, which is crucial for tasks like image recognition and language modeling.
 
+The sudden boom in the deep learning field can be attributed to three main factors: advancements in the field, data availability, and greater computational power.
+
+
+
