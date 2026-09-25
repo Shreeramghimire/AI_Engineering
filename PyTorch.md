@@ -32,3 +32,9 @@ We want to classify emails as spam (1) or not spam (0). Features might be:
 - Whether the sender is in your contacts
 
 The model computes z=2.5 for a particular email. Applying sigmoid:
+
+$$
+\sigma(2.5)=\frac{1}{1+e^{-2.5}}\approx 0.924
+$$
+
+
