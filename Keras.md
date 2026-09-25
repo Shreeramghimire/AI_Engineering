@@ -748,13 +748,15 @@ A neural network with one hidden layer is considered a shallow neural network.
 
 A shallow neural network has:
 
-- An input layer
+- An input layer (vectors)
 
 - One hidden layer
 
 - An output layer
 
-It's called "shallow" because information passes through only a single transformation between input and output. Mathematically, it can still approximate many functions (the universal approximation theorem says a single hidden layer with enough neurons can approximate any continuous function). Still it's inefficient at learning complex, hierarchical patterns.
+It's called "shallow" because information passes through only a single transformation between input and output. Mathematically, it can still approximate many functions (the universal approximation theorem says a single hidden layer with enough neurons can approximate any continuous function). Still, it's inefficient at learning complex, hierarchical patterns.
+
+Shallow networks require flattened, pre-processed vectors. An image must be unrolled into a 1D array, losing spatial structure. Text must be converted into numeric features (bag-of-words, TF-IDF).
 
 **Limitations:**
 
@@ -779,4 +781,18 @@ A deep neural network (DNN) stacks many hidden layers. Each layer learns increas
 This hierarchical feature learning is what makes deep networks powerful. Instead of hand-engineering features, the network discovers them automatically.
 
 Key advantage: Depth allows the network to represent complex functions with far fewer neurons than a shallow network would need.
+
+Inputs: raw data, such as images and text
+
+Deep networks can consume raw data directly:
+
+- Images – as 3D tensors (height, width, channels) via CNNs
+
+- Text – as sequences of tokens via RNNs/Transformers
+
+- Audio – as spectrograms or waveforms
+
+- Video – as sequences of frames
+
+This means deep networks preserve the structure of the data, which is crucial for tasks like image recognition and language modeling.
 
