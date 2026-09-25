@@ -900,4 +900,23 @@ f(x) = max(0, x)
 
 In practice, the sequence is: Convolution → ReLU (often written as Conv + ReLU).
 
+#### Pooling Layer
+
+The pooling layer is added to reduce the spatial dimensions of the data propagating through the network.
+
+Pooling downsamples feature maps, reducing their height and width while retaining the most important information.
+
+**Benefits:**
+
+- Reduces computation: fewer parameters in subsequent layers.
+
+- Controls overfitting: less spatial detail to memorize.
+
+- Provides translation invariance: small shifts in the input don't change the pooled output much.
+
+Typical setup: A 2×2 pooling window with stride 2 halves the spatial dimensions.
+
+The two types of pooling widely used in convolutional neural networks are max pooling and average pooling.
+
+
 
