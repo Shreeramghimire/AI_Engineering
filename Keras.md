@@ -1085,3 +1085,11 @@ This is because the learned latent representation is tailored to the patterns in
 
 Applications of autoencoders include data denoising and dimensionality reduction for data visualization.
 
+| **Application** | **How It Works** |
+|---|---|
+| **Denoising** | Train the autoencoder on `(noisy input → clean target)`. At test time, it removes noise from new inputs. |
+| **Dimensionality reduction** | The latent representation is a compressed version of the input, useful for visualization (e.g., t-SNE on latent codes). |
+| **Anomaly detection** | Train on normal data; at test time, high reconstruction error indicates an anomaly. |
+| **Feature extraction** | Use the encoder's latent representation as features for another model. |
+| **Generative modeling** | Variational autoencoders (VAEs) can generate new samples by sampling from the latent space. |
+
