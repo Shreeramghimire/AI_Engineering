@@ -740,3 +740,5 @@ predictions = model.predict(X_test)
 predicted_classes = np.argmax(predictions, axis=1)
 ```
 
+## Types of Neural Network Architecture
+
