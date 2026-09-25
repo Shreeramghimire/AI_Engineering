@@ -998,4 +998,19 @@ Where:
 
 - f = activation function (tanh or ReLU)
 
+The same weights are shared across all time steps (weight sharing over time), so the network can process sequences of any length.
+
+RNNs are good at modeling patterns and sequences of data, such as texts, genomes, handwriting, and stock markets.
+
+| **Domain** | **Example Task** |
+|---|---|
+| **Text** | Language modeling, machine translation, sentiment analysis, text generation |
+| **Genomes** | Predicting gene function, classifying DNA sequences |
+| **Handwriting** | Generating handwriting, recognizing handwritten text |
+| **Stock markets** | Forecasting prices, detecting anomalies |
+| **Speech** | Speech recognition, text-to-speech |
+| **Music** | Composing melodies, generating chord progressions |
+| **Video** | Action recognition, captioning |
+
+RNNs excel whenever **context from previous inputs** improves predictions.
 
