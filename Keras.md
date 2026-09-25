@@ -705,3 +705,9 @@ y_test = to_categorical(y_test)
 
 **Step 3: Build the model**
 ```python
+model = Sequential([
+    Dense(64, activation='relu', input_shape=(X_train.shape[1],)),
+    Dense(32, activation='relu'),
+    Dense(y_train.shape[1], activation='softmax')  # output layer
+])
+```
