@@ -813,3 +813,6 @@ Convolutional neural networks make the explicit assumption that the inputs are i
 - Patterns can appear anywhere in the image (translation invariance)
 
 - The input has a grid-like topology (2D for images, 1D for audio, 3D for video)
+
+This assumption allows CNNs to exploit weight sharing: the same filter is applied across the entire image, drastically reducing the number of parameters compared to a fully connected network.
+
