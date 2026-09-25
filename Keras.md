@@ -671,7 +671,7 @@ print(y_encoded)
 # [1. 0. 0.]
 ```
 
-### Building Classification Model in Keras
+## Building Classification Model in Keras
 
 
 
