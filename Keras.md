@@ -746,3 +746,20 @@ predicted_classes = np.argmax(predictions, axis=1)
 
 A neural network with one hidden layer is considered a shallow neural network.
 
+A shallow neural network has:
+
+- An input layer
+
+- One hidden layer
+
+- An output layer
+
+It's called "shallow" because information passes through only a single transformation between input and output. Mathematically, it can still approximate many functions (the universal approximation theorem says a single hidden layer with enough neurons can approximate any continuous function). Still it's inefficient at learning complex, hierarchical patterns.
+
+**Limitations:**
+
+1. Requires a very large number of neurons to model complex functions
+
+2. Cannot learn hierarchical features (e.g., edges → shapes → objects in images)
+
+3. Only takes vector inputs — data must be pre-processed into a flat feature vector
