@@ -947,3 +947,7 @@ Average pooling output:
 [3.75, 5.25]
 [4.75, 4.5]
 ```
+
+Max pooling is preferred because it highlights the most salient features and works well in practice.
+
+#### Fully Connected Layer
