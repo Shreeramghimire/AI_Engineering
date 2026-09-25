@@ -966,5 +966,17 @@ Role of the FC layer:
 
 Input → [Conv → ReLU → Pool] × N → Flatten → [Dense → ReLU] × M → Dense (output)
 
+### Recurrent Neural Networks (RNNs)
 
+Neural networks and deep learning models see data points as independent instances.
+
+Standard feedforward networks (including CNNs) treat each input as independent of the others. When classifying an image, the network doesn't care what image came before it.
+
+This works for many tasks but fails for sequential data, where order matters:
+
+- In a sentence, "not good" means something different from "good not."
+
+- In a stock chart, today's price depends on yesterday's.
+
+- In a genome, the position of a gene matters.
 
