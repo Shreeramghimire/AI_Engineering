@@ -980,3 +980,22 @@ This works for many tasks but fails for sequential data, where order matters:
 
 - In a genome, the position of a gene matters.
 
+#### Sequential input in RNNs
+
+Recurrent Neural Networks, or RNNs, don't just take new input but also take the output from the previous data point as input. RNNs introduce memory through a hidden state that is passed from one time step to the next.
+
+h_t = f(W_x · x_t + W_h · h_{t-1} + b)
+
+Where:
+
+- x_t = input at time t
+
+- h_{t-1} = hidden state from the previous step
+
+- h_t = new hidden state
+
+- W_x, W_h = weight matrices
+
+- f = activation function (tanh or ReLU)
+
+
