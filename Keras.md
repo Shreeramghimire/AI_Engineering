@@ -1093,7 +1093,7 @@ Applications of autoencoders include data denoising and dimensionality reduction
 | **Feature extraction** | Use the encoder's latent representation as features for another model. |
 | **Generative modeling** | Variational autoencoders (VAEs) can generate new samples by sampling from the latent space. |
 
-#### Encoder-Decoder Pipeline
+**Encoder-Decoder Pipeline**
 
 Autoencoding can take an image as an input, use an encoder to find the optimal compressed representation of the input image, and then use a decoder to restore the original image.
 
@@ -1111,7 +1111,40 @@ The bottleneck forces the network to learn a compressed, meaningful representati
 
 #### Restricted Boltzmann Machines
 
-A popular type of autoencoder is restricted Boltzmann machines.
+A popular type of autoencoder is restricted Boltzmann machines (RBM).
+
+Restricted Boltzmann Machines (RBMs) are a type of generative stochastic neural network that can learn a probability distribution over its inputs. They're "restricted" because there are no connections between nodes within the same layer (visible-to-visible or hidden-to-hidden).
+
+**Structure:**
+
+- Visible layer – represents the input data.
+
+- Hidden layer – learns latent features.
+
+- Fully connected between layers, but no intra-layer connections.
+
+**How they work:**
+
+- RBMs are energy-based models: they assign low energy to likely configurations and high energy to unlikely ones.
+
+- Training uses contrastive divergence (a variant of gradient descent).
+
+- Stacking RBMs creates a Deep Belief Network (DBN), which was one of the first successful deep architectures (Hinton, 2006).
+
+**Relation to autoencoders:** RBMs can be used as building blocks for autoencoders, and they share the goal of learning useful latent representations.
+
+**RBM Applications**
+
+Applications of restricted Boltzmann machines include fixing imbalanced data sets, estimating missing data set values, and automatic feature extraction.
+
+| **Application** | **How It Works** |
+|---|---|
+| **Imbalanced datasets** | RBMs can generate synthetic samples for underrepresented classes. |
+| **Missing value estimation** | RBMs can infer missing values by sampling from the learned distribution given observed values. |
+| **Feature extraction** | The hidden layer activations serve as learned features for downstream tasks. |
+| **Collaborative filtering** | RBMs can be used in recommender systems (e.g., Netflix Prize: *Restricted Boltzmann Machines for Collaborative Filtering*). |
+| **Dimensionality reduction** | Similar to autoencoders, RBMs can learn compact representations. |
+| **Classification** | Stacked RBMs (DBNs) can be fine-tuned for classification tasks. |
 
 
 
