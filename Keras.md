@@ -1146,5 +1146,15 @@ Applications of restricted Boltzmann machines include fixing imbalanced data set
 | **Dimensionality reduction** | Similar to autoencoders, RBMs can learn compact representations. |
 | **Classification** | Stacked RBMs (DBNs) can be fine-tuned for classification tasks. |
 
+### Summary
 
+| **Architecture** | **Input Type** | **Key Idea** | **Best For** |
+|---|---|---|---|
+| **Shallow NN** | Vectors | One hidden layer | Simple tabular problems |
+| **Deep NN** | Raw data | Many hidden layers, hierarchical features | Complex patterns |
+| **CNN** | Images (grids) | Convolution + pooling + fully connected layers | Image recognition, object detection |
+| **RNN** | Sequences | Hidden state passed through time | Text, time series, speech |
+| **LSTM** | Sequences | Gated memory cells | Long-range dependencies |
+| **Autoencoder** | Any | Encoder → bottleneck → decoder | Compression, denoising, anomaly detection |
+| **RBM** | Any | Energy-based generative model | Feature extraction, missing values |
 
