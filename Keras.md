@@ -852,3 +852,5 @@ CNN inputs are 3D tensors: (height, width, channels)
 | **Color (RGB)** | `(n, m, 3)` | 3 (red, green, blue) |
 | **RGBA** | `(n, m, 4)` | 4 (RGB + alpha/transparency) |
 | **Hyperspectral** | `(n, m, k)` | k (many wavelengths) |
+
+When we feed a batch of images, the shape becomes (batch_size, n, m, channels): e.g., (32, 224, 224, 3) for a batch of 32 RGB images.
