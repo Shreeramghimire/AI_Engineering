@@ -890,4 +890,14 @@ A convolutional layer also consists of ReLUs, which filter the output of the con
 After convolution, a ReLU activation is applied element-wise to the feature map:
 f(x) = max(0, x)
 
+**Why it's needed:**
+
+- Introduces non-linearity: without it, stacking convolutions would be equivalent to a single linear operation.
+
+- Sparsity: negative values become 0, so only the strongest features pass through.
+
+- Efficiency: cheap to compute, and gradients flow well for positive values.
+
+In practice, the sequence is: Convolution → ReLU (often written as Conv + ReLU).
+
 
