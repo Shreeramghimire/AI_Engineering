@@ -673,6 +673,8 @@ print(y_encoded)
 
 ## Building Classification Model in Keras
 
+**Step 1: Import libraries**
+```python
 
 
  
