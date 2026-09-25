@@ -13,3 +13,10 @@ Think of logistic regression like a smart gatekeeper who uses a smooth curve (ca
 
 Logistic regression uses the sigmoid function to map any input to a value between 0 and 1, representing the probability of belonging to class 1.
 
+The sigmoid function:
+
+$$
+\sigma(z)=\frac{1}{1+e^{-z}}
+$$
+
+Where $z = \mathbf{w}^T\mathbf{x}+b$ is a linear combination of the inputs and weights.
