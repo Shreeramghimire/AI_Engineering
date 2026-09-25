@@ -804,3 +804,4 @@ The sudden boom in the deep learning field can be attributed to three main facto
 | **Data availability** | The internet created massive datasets: ImageNet (14M images), Common Crawl (petabytes of text), YouTube (video), etc. Deep learning thrives on large amounts of data. |
 | **Computational power** | GPUs and TPUs made parallel matrix operations fast and affordable. Training a deep network that took months in 2010 can now take hours. |
 
+### Convolutional Neural Networks (CNNs)
