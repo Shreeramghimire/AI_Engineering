@@ -742,3 +742,7 @@ predicted_classes = np.argmax(predictions, axis=1)
 
 ## Types of Neural Network Architecture
 
+### Shallow Neural Network
+
+A neural network with one hidden layer is considered a shallow neural network.
+
