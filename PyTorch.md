@@ -20,3 +20,15 @@ $$
 $$
 
 Where $z = \mathbf{w}^T\mathbf{x}+b$ is a linear combination of the inputs and weights.
+
+**Real-world example: Email Spam Detection**
+
+We want to classify emails as spam (1) or not spam (0). Features might be:
+
+- Number of links in the email
+
+- Frequency of words like "free," "win," "urgent"
+
+- Whether the sender is in your contacts
+
+The model computes z=2.5 for a particular email. Applying sigmoid:
