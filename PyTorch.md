@@ -60,3 +60,13 @@ More real-world examples:
 Mean Squared Error (MSE) is a way to measure how accurate a predictive model is by calculating the average squared distance between its predictions and the actual results.
 
 Because it measures physical distance, it is the gold standard for **regression tasks** (predicting continuous numbers like house prices, temperature, or stock values) rather than **classification tasks**. 
+
+$$
+\text{Loss} =
+\begin{cases}
+0, & \text{if prediction is correct} \\
+1, & \text{if prediction is wrong}
+\end{cases}
+$$
+
+
