@@ -81,4 +81,7 @@ $$
 | D | Rejected (0) | 0.01 | 0 (correct) |
 
 
+Whether the model predicts 0.51 or 0.99 for applicant A, the error count is the same (0). There's no gradient telling the model "0.99 is better than 0.51." The model can't improve.
+
+Worse, if applicant A were predicted at 0.49 (wrong), the loss jumps to 1 — but the gradient is zero everywhere except at the decision boundary. Gradient descent has nothing to follow.
 
