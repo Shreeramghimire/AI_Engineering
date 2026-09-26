@@ -71,4 +71,14 @@ $$
 \end{cases}
 $$
 
+**Example: loan approval**
+
+| **Applicant** | **True Label** | **Predicted Probability** | **Error Count Loss** |
+|---|---|---:|---|
+| A | Approved (1) | 0.51 | 0 (rounded to 1, correct) |
+| B | Approved (1) | 0.99 | 0 (correct) |
+| C | Rejected (0) | 0.49 | 0 (rounded to 0, correct) |
+| D | Rejected (0) | 0.01 | 0 (correct) |
+
+
 
