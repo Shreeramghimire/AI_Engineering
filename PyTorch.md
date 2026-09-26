@@ -55,3 +55,5 @@ More real-world examples:
 
 - Ad click prediction: Probability a user will click on an ad
 
+### MSE (why is it problematic?)
+
