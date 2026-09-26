@@ -61,6 +61,8 @@ Mean Squared Error (MSE) is a way to measure how accurate a predictive model is 
 
 Because it measures physical distance, it is the gold standard for **regression tasks** (predicting continuous numbers like house prices, temperature, or stock values) rather than **classification tasks**. 
 
+Suppose we define loss as:
+
 $$
 \text{Loss} =
 \begin{cases}
