@@ -24,11 +24,12 @@ x = torch.tensor([1.0, 2.0, 3.0])
 
 2. Autograd, PyTorch automatically computes gradients.
 
+```python
 x = torch.tensor(2.0, requires_grad=True)
 y = x**2
 y.backward()
 print(x.grad)  # tensor(4.)  ← dy/dx = 2x = 4
-
+```
 
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
 
