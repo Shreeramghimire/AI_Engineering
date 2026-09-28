@@ -8,11 +8,20 @@
 
 For simple linear regression, we could use Excel or plain math. But PyTorch gives:
 
-- Fast math on lots of numbers: especially using GPUs
+- Fast math on lots of numbers, especially using GPUs
 
 - Automatic gradients: it figures out how to adjust weights for you
 
 - Efficient handling of big datasets
+
+**Two Big Ideas**
+ 1.  Tensors, like NumPy arrays, but can run on GPUs.
+
+'''python
+import torch
+x = torch.tensor([1.0, 2.0, 3.0])
+'''
+2. Autograd, PyTorch automatically computes gradients.
 
 
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
