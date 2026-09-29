@@ -115,6 +115,32 @@ The model learns to perfect **all predictions together**, just like perfecting a
 
 ---
 
+$$\mathbf{y} = W\mathbf{x} + \mathbf{b}$$
+
+Where:
+
+- $\mathbf{x}$ = input vector (e.g., $[flour, sugar, eggs]$)
+- $W$ = weight **matrix** (shape: `num_features × num_outputs`)
+- $\mathbf{b}$ = bias **vector** (shape: `num_outputs`)
+- $\mathbf{y}$ = output vector (e.g., $[weight, sweetness]$)
+
+**Concrete example:**
+
+Suppose:
+
+- Inputs: 3 features (flour, sugar, eggs)
+- Outputs: 2 targets (weight, sweetness)
+
+Then:
+
+- $W$ is a **3 × 2 matrix**
+- $\mathbf{b}$ is a **2-element vector**
+- $\mathbf{y}$ is a **2-element vector**
+
+$$W = \begin{bmatrix} w_{11} & w_{12} \\ w_{21} & w_{22} \\ w_{31} & w_{32} \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} b_1 \\ b_2 \end{bmatrix}$$
+
+Each column of $W$ corresponds to one output. Each row corresponds to one input feature.
+
 
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
 
