@@ -196,6 +196,60 @@ model = nn.Linear(in_features=3, out_features=2)
 criterion = nn.MSELoss()
 ```
 
+**Complete Training Example**
+
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+# ── 1. Data ──────────────────────────────────────────
+# Inputs: [flour, sugar, eggs]
+X = torch.tensor([
+    [2.0, 1.0, 3.0],
+    [3.0, 2.0, 2.0],
+    [1.0, 3.0, 1.0],
+    [4.0, 1.0, 2.0],
+    [2.0, 2.0, 3.0],
+])
+
+# Targets: [weight, sweetness]
+y = torch.tensor([
+    [250.0, 7.0],
+    [300.0, 6.0],
+    [200.0, 8.0],
+    [350.0, 5.0],
+    [280.0, 7.5],
+])
+
+# ── 2. Model ─────────────────────────────────────────
+model = nn.Linear(in_features=3, out_features=2)
+
+# ── 3. Loss ──────────────────────────────────────────
+criterion = nn.MSELoss()
+
+# ── 4. Optimizer ─────────────────────────────────────
+optimizer = optim.SGD(model.parameters(), lr=0.0001)
+
+# ── 5. Training Loop ─────────────────────────────────
+for epoch in range(5000):
+    y_pred = model(X)                 # Forward → shape (5, 2)
+    loss = criterion(y_pred, y)       # Aggregated loss over both outputs
+    optimizer.zero_grad()             # Reset gradients
+    loss.backward()                   # Backward
+    optimizer.step()                  # Update W and b
+
+    if (epoch + 1) % 1000 == 0:
+        print(f'Epoch {epoch+1}, Loss: {loss.item():.4f}')
+
+# ── 6. Predict ───────────────────────────────────────
+model.eval()
+with torch.no_grad():
+    new_recipe = torch.tensor([[2.5, 1.5, 2.5]])
+    prediction = model(new_recipe)
+    print(f'Predicted [weight, sweetness]: {prediction.numpy()}')
+```
+
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
 
 Imagine we're playing a guessing game where you have to predict if a picture shows a cat or not. Cross-entropy loss is like a scorekeeper that tells us how well our guesses match the truth. If we confidently say "cat" when it's really a cat, we get a good score (low loss). But if we confidently say "cat" when it's not, we get a bad score (high loss). This loss uses a special formula that punishes wrong and overconfident guesses more harshly, helping the model learn better.
