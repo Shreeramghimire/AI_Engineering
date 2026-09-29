@@ -102,7 +102,18 @@ The model doesn't just give one answer; it gives a **vector of answers**, all at
 
 ---
 
-Example: Predict ice cream sales from temperature → one output.
+| Concept | Analogy |
+|---|---|
+| Input features | Ingredients you put in |
+| Output 1 (weight) | How much the cake weighs |
+| Output 2 (sweetness) | How sweet the cake tastes |
+| Weight matrix $W$ | Table showing how each ingredient affects each outcome |
+| Bias vector $\mathbf{b}$ | Little extra nudge to make each prediction more accurate |
+| Training | Tasting the cake, comparing to the ideal, adjusting the recipe |
+
+The model learns to perfect **all predictions together** — just like perfecting a recipe to get the best cake every time.
+
+---
 
 
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
