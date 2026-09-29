@@ -154,6 +154,27 @@ $$
 
 Each column of $W$ corresponds to one output. Each row corresponds to one input feature.
 
+---
+
+## The Cost Function
+
+For single-output MSE:
+
+$$\text{Loss} = \frac{1}{N}\sum_{i=1}^{N}(y_i - \hat{y}_i)^2$$
+
+For multi-output, we **sum the squared errors across all outputs**:
+
+$$\text{Loss} = \frac{1}{N}\sum_{i=1}^{N}\sum_{j=1}^{M}(y_{ij} - \hat{y}_{ij})^2$$
+
+Where:
+
+- $N$ = number of samples
+- $M$ = number of outputs
+
+**Key idea:** The model improves **all predictions together** — one aggregated loss drives learning for every output.
+
+---
+
 
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
 
