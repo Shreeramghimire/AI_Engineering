@@ -137,7 +137,9 @@ Then:
 - $\mathbf{b}$ is a **2-element vector**
 - $\mathbf{y}$ is a **2-element vector**
 
-$$W = \begin{bmatrix} w_{11} & w_{12} \\ w_{21} & w_{22} \\ w_{31} & w_{32} \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} b_1 \\ b_2 \end{bmatrix}$$
+$$
+W = \begin{bmatrix} w_{11} & w_{12} \\ w_{21} & w_{22} \\ w_{31} & w_{32} \end{bmatrix}, \quad \mathbf{b} = \begin{bmatrix} b_1 \\ b_2 \end{bmatrix}
+$$
 
 Each column of $W$ corresponds to one output. Each row corresponds to one input feature.
 
