@@ -111,7 +111,7 @@ The model doesn't just give one answer; it gives a **vector of answers**, all at
 | Bias vector $\mathbf{b}$ | Little extra nudge to make each prediction more accurate |
 | Training | Tasting the cake, comparing to the ideal, adjusting the recipe |
 
-The model learns to perfect **all predictions together** — just like perfecting a recipe to get the best cake every time.
+The model learns to perfect **all predictions together**, just like perfecting a recipe to get the best cake every time.
 
 ---
 
