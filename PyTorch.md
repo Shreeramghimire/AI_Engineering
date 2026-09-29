@@ -98,7 +98,7 @@ $$\mathbf{y} = W\mathbf{x} + \mathbf{b}$$
 
 Example: Predict both **weight** and **sweetness** of a cake from ingredients → two outputs.
 
-The model doesn't just give one answer — it gives a **vector of answers**, all at once.
+The model doesn't just give one answer; it gives a **vector of answers**, all at once.
 
 ---
 
