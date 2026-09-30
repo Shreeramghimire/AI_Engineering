@@ -350,7 +350,14 @@ If probability ≥ 0.5 → Class 1
 
 Else → Class 0
 
+The threshold can be adjusted:
 
+- Lower threshold → more Class 1 predictions (higher recall)
+- Higher threshold → fewer Class 1 predictions (higher precision)
+
+---
+
+## The Big Picture
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
 
 Imagine we're playing a guessing game where you have to predict if a picture shows a cat or not. Cross-entropy loss is like a scorekeeper that tells us how well our guesses match the truth. If we confidently say "cat" when it's really a cat, we get a good score (low loss). But if we confidently say "cat" when it's not, we get a bad score (high loss). This loss uses a special formula that punishes wrong and overconfident guesses more harshly, helping the model learn better.
