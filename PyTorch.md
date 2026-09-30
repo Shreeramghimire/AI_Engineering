@@ -320,6 +320,16 @@ This converts any score into a **probability between 0 and 1**.
 | Zero | 0.5 | Uncertain |
 | Large positive | Close to 1 | Very likely Class 1 |
 
+**Example outputs:**
+
+- 0.95 → "95% sure it's an apple"
+- 0.60 → "60% sure it's an apple"
+- 0.50 → "I have no idea"
+- 0.10 → "90% sure it's an orange"
+
+Much more informative than a simple yes/no.
+
+---
 
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
 
