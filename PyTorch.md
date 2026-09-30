@@ -261,7 +261,15 @@ A **linear classifier** does exactly that: it draws a straight line that splits 
 
 That line is called the **decision boundary**.
 
+A decision boundary is the line that separates classes:
 
+| Dimensions | Boundary |
+|---|---|
+| 2D | A line |
+| 3D | A plane |
+| Higher dimensions | A hyperplane |
+
+The classifier uses a simple formula to decide which side a point belongs to.
 
 ---
 
