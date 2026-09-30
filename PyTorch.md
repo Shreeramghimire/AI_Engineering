@@ -252,6 +252,18 @@ with torch.no_grad():
 
 ## Linear Classifiers and Decision Boundaries
 
+Imagine we have fruits on a table: apples and oranges. We want to separate them automatically.
+
+A **linear classifier** does exactly that: it draws a straight line that splits the fruits into two groups based on their features (like color or size).
+
+- Fruit on one side → Apple
+- Fruit on the other side → Orange
+
+That line is called the **decision boundary**.
+
+
+
+---
 
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
 
