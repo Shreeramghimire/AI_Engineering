@@ -768,3 +768,8 @@ for epoch in range(num_epochs):
 
 After training, predicted probabilities are converted into class predictions using a threshold (commonly 0.5):
 
+```python
+with torch.no_grad():
+    probabilities = model(X)
+    predictions = (probabilities > 0.5).float()   # 1 if spam, 0 if not
+```
