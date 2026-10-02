@@ -845,5 +845,23 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=0.01)
 
 ## Learning Rate Strategies
 
+**Step Decay**
 
+Reduce the learning rate by a factor every N epochs.
+
+```python
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=30, gamma=0.1)
+```
+
+**Plateau Reduction**
+
+Reduce when a monitored metric (e.g., validation loss) stops improving.
+
+```python
+scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+    optimizer, mode='min', factor=0.1, patience=5
+)
+# In training loop:
+scheduler.step(val_loss)
+```
 
