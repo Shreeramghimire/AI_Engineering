@@ -665,3 +665,24 @@ mse_model = train(nn.MSELoss(), "MSE")
 # Binary Cross-Entropy
 bce_model = train(nn.BCELoss(), "BCE")
 ```
+
+**What we'll observe:**
+
+BCE converges faster and to a lower loss.
+
+MSE learns more slowly, especially when predictions start off very wrong.
+
+---
+
+In practice, PyTorch lets you skip the explicit sigmoid by using *BCEWithLogitsLoss*, it's numerically more stable:
+
+```python
+# Instead of this:
+model = nn.Sequential(nn.Linear(2, 1), nn.Sigmoid())
+loss_fn = nn.BCELoss()
+
+# Do this (recommended):
+model = nn.Linear(2, 1)                # no sigmoid
+loss_fn = nn.BCEWithLogitsLoss()       # applies sigmoid + BCE internally
+```
+
