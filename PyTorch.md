@@ -357,8 +357,27 @@ The threshold can be adjusted:
 
 ---
 
-## Bernouli Distribution
+## Bernoulli Distribution
 
+A **Bernoulli distribution** models a single experiment with two outcomes:
+
+- **Heads (success)**: probability = θ
+- **Tails (failure)**: probability = 1 − θ
+
+Mathematically:
+
+$$
+P(x) = \theta^x (1-\theta)^{1-x}
+$$
+
+where $x \in \{0, 1\}$ (1 = heads, 0 = tails).
+
+**Example:** If θ = 0.2, then:
+
+- $P(\text{heads}) = 0.2$
+- $P(\text{tails}) = 0.8$
+
+---
  
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
 
