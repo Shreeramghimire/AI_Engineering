@@ -729,4 +729,37 @@ loss_fn = nn.BCELoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
 ```
 
+## The Training Loop 
 
+Every iteration does 5 things:
+
+- Forward pass: make predictions
+
+- Compute loss: compare predictions to true labels
+
+- Zero gradients: clear old gradients
+
+- Backward pass: compute new gradients
+
+- Update parameters: nudge weights in the downhill direction
+
+```python
+for epoch in range(num_epochs):
+    # 1. Forward pass: predicted probabilities
+    y_pred = model(X)
+    
+    # 2. Compute loss
+    loss = loss_fn(y_pred, y)
+    
+    # 3. Zero out old gradients
+    optimizer.zero_grad()
+    
+    # 4. Backward pass: compute gradients
+    loss.backward()
+    
+    # 5. Update weights
+    optimizer.step()
+    
+    if epoch % 50 == 0:
+        print(f"Epoch {epoch}: loss = {loss.item():.4f}")
+```
