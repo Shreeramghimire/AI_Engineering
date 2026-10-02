@@ -544,7 +544,7 @@ Worse, if applicant A were predicted at 0.49 (wrong), the loss jumps to 1 — bu
 
 ## Cross-Entropy Loss vs. MSE
 
-Imagine we're building a spam filter. For each email, your model outputs a **probability**:
+Imagine we're building a spam filter. For each email, our model outputs a **probability**:
 
 - "90% sure this is spam" → prediction = 0.9
 - "60% sure this is not spam" → prediction = 0.4 (since not-spam = 1 − 0.6)
@@ -556,5 +556,30 @@ So the question becomes: **How do we score the model's probability predictions a
 That's exactly what a **loss function** does.
 
 ---
+Cross-entropy loss measures how "surprised" the model is by the true label.
+
+For binary classification:
+
+$$
+\text{BCE}(y, \hat{y}) = -\big[ y \log(\hat{y}) + (1-y)\log(1-\hat{y}) \big]
+$$
+
+where:
+- $y$ = true label (0 or 1)
+- $\hat{y}$ = predicted probability (between 0 and 1)
+
+**Let's see it in action:**
+
+| True label $y$ | Predicted $\hat{y}$ | Loss $-\log(\hat{y})$ | Meaning |
+|---|---|---|---|
+| 1 (spam) | 0.9 | 0.105 | Small loss — good guess |
+| 1 (spam) | 0.5 | 0.693 | Medium loss — uncertain |
+| 1 (spam) | 0.1 | 2.303 | **Big loss** — confident but wrong! |
+
+Notice the **confident-but-wrong penalty** — that's the key feature.
+
+---
+
+
 
 
