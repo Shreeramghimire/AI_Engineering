@@ -542,3 +542,6 @@ Whether the model predicts 0.51 or 0.99 for applicant A, the error count is the 
 
 Worse, if applicant A were predicted at 0.49 (wrong), the loss jumps to 1 — but the gradient is zero everywhere except at the decision boundary. Gradient descent has nothing to follow.
 
+## Cross-Entropy Loss vs. MSE
+
+
