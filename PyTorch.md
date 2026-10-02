@@ -864,4 +864,12 @@ scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
 # In training loop:
 scheduler.step(val_loss)
 ```
+**Cosine / Gradual Decay**
+
+Smoothly decay LR following a cosine curve — very popular in modern training.
+
+```python
+scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=50)
+```
+
 
