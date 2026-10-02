@@ -785,3 +785,25 @@ with torch.no_grad():
 ### 1. The Mountain-in-the-Fog Analogy
 
 
+Imagine you're trying to find the fastest way down a mountain in the fog. The mountain is your model's **error**, and you want to reach the bottom (lowest error) as quickly and safely as possible. The **optimizer** is your guide, deciding which path to take and how big your steps should be.
+
+- **Adam** is a smart guide who watches how steep the path is and adjusts your step size **for each foot separately**. If one foot is on a slippery slope, it takes smaller steps; if the other is on a gentle slope, it takes bigger steps.
+- **RMSProp** looks at how steep the path has been **recently** and adjusts your step size to avoid big jumps — great for uneven terrain.
+- **AdamW** is like Adam but better at keeping your shoes clean (**regularization**). It separates the cleaning from the walking, so your shoes last longer.
+
+Keep this analogy in mind — everything below builds on it.
+
+---
+
+### 2. Optimizers: Adam, RMSProp, and AdamW
+
+#### Adam (Adaptive Moment Estimation)
+
+Adam adapts the learning rate **individually for each parameter** using running averages of gradients.
+
+- Keeps a **first moment** (mean of gradients) and a **second moment** (mean of squared gradients).
+- Divides the update by the square root of the second moment — so noisy parameters get smaller steps.
+
+```python
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
+```
