@@ -843,5 +843,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=0.01)
   
 - Cons: Slightly more hyperparameters to tune.
 
+## Learning Rate Strategies
+
 
 
