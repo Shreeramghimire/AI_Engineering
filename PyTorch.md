@@ -580,6 +580,23 @@ Notice the **confident-but-wrong penalty** — that's the key feature.
 
 ---
 
+MSE (mean squared error) is:
+
+$$
+\text{MSE} = (y - \hat{y})^2
+$$
+
+It looks reasonable, but there's a hidden problem: when you combine MSE with a **sigmoid** output (which is what classifiers use), the gradients become tiny.
+
+Let's visualize the issue:
+
+- With **sigmoid + MSE**, the gradient of loss w.r.t. the weights includes a factor $\sigma'(z) = \hat{y}(1-\hat{y})$.
+- When the model is very wrong (e.g., $\hat{y} \approx 0$ but $y = 1$), $\sigma'(z) \approx 0$ → **gradient vanishes** → learning stalls.
+- This creates **flat regions** in the loss surface.
+
+With **sigmoid + cross-entropy**, the $\sigma'(z)$ term cancels out mathematically, giving clean gradients that don't vanish.
+
+---
 
 
 
