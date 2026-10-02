@@ -807,3 +807,41 @@ Adam adapts the learning rate **individually for each parameter** using running 
 ```python
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 ```
+
+- Pros: Fast convergence, robust to learning rate choice.
+  
+- Cons: Weight decay is coupled with gradient updates, which can hurt generalization.
+
+#### RMSProp
+RMSProp normalizes updates by maintaining a moving average of squared gradients.
+
+- Doesn't use momentum like Adam, just a scaled gradient.
+
+- Excellent for sequential models (RNNs, LSTMs) where gradients vary wildly.
+
+```python
+optimizer = torch.optim.RMSprop(model.parameters(), lr=1e-3, alpha=0.99)
+```
+
+- Pros: Stable in non-stationary settings.
+  
+- Cons: No momentum, can be slower than Adam on some tasks.
+
+#### AdamW (Adam with Decoupled Weight Decay)
+
+AdamW is like Adam, but weight decay is applied separately from the gradient update.
+
+- In classic Adam + L2, decay gets scaled by the adaptive learning rate — which weakens its effect.
+
+- AdamW decouples them, giving better regularization and generalization, especially in large networks.
+
+```python
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=0.01)
+```
+
+- Pros: Better generalization, current default for transformers.
+  
+- Cons: Slightly more hyperparameters to tune.
+
+
+
