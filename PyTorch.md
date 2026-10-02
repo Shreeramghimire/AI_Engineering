@@ -411,6 +411,24 @@ This turns **multiplication into addition**, much easier to work with. Crucially
 
 ---
 
+## Maximum Likelihood Estimation (MLE)
+
+We want the θ that makes the observed data most likely. Take the derivative and set it to 0:
+
+$$
+\frac{d}{d\theta} \log L = \frac{k}{\theta} - \frac{n-k}{1-\theta} = 0
+$$
+
+Solving gives:
+
+$$
+\boxed{\hat{\theta}_{MLE} = \frac{k}{n}}
+$$
+
+**In simple word:** the MLE is just the fraction of heads we observed! If we flipped 10 times and got 7 heads, θ̂ = 0.7.
+
+---
+
 
 **Cross-Entropy Loss:** Cross-entropy loss looks at the predicted probability of the right answer and uses logarithms to measure how close the prediction is to the truth. The smoother and more informative this score is, the easier it is for the model to improve by adjusting its guesses step by step, like climbing down a hill to find the lowest point (best prediction). 
 
