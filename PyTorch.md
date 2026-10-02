@@ -599,4 +599,3 @@ With **sigmoid + cross-entropy**, the $\sigma'(z)$ term cancels out mathematical
 ---
 
 
-
