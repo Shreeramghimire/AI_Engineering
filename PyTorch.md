@@ -620,4 +620,48 @@ $$
 
 **That's exactly cross-entropy loss!** So minimizing BCE = maximizing likelihood. They're the same thing.
 
+---
+PyTorch Code: MSE vs. BCE in Action
 
+Let's compare both on a simple binary classification problem:
+
+```python
+import torch
+import torch.nn as nn
+
+# ---- Data: 4 samples, 2 features ----
+X = torch.tensor([[1.0, 2.0],
+                  [2.0, 1.0],
+                  [-1.0, -2.0],
+                  [-2.0, -1.0]])
+y = torch.tensor([[1.0], [1.0], [0.0], [0.0]])  # binary labels
+
+# ---- A tiny model: linear layer + sigmoid ----
+model = nn.Sequential(
+    nn.Linear(2, 1),
+    nn.Sigmoid()
+)
+
+# ---- Try both losses ----
+def train(loss_fn, name, lr=0.1, steps=200):
+    # Reset the model
+    torch.manual_seed(0)
+    model = nn.Sequential(nn.Linear(2, 1), nn.Sigmoid())
+    optimizer = torch.optim.SGD(model.parameters(), lr=lr)
+    
+    for step in range(steps):
+        optimizer.zero_grad()
+        y_pred = model(X)
+        loss = loss_fn(y_pred, y)
+        loss.backward()
+        optimizer.step()
+    
+    print(f"{name}: final loss = {loss.item():.4f}")
+    return model
+
+# Mean Squared Error
+mse_model = train(nn.MSELoss(), "MSE")
+
+# Binary Cross-Entropy
+bce_model = train(nn.BCELoss(), "BCE")
+```
