@@ -763,3 +763,8 @@ for epoch in range(num_epochs):
     if epoch % 50 == 0:
         print(f"Epoch {epoch}: loss = {loss.item():.4f}")
 ```
+
+**Prediction (after training)**
+
+After training, predicted probabilities are converted into class predictions using a threshold (commonly 0.5):
+
