@@ -696,5 +696,37 @@ This score is special because it changes smoothly as the computer adjusts its gu
 
 - This smoothness allows **gradient-based optimization** methods like gradient descent to update model parameters efficiently **without stalling**.
 
+Cross-entropy gives us that smooth hill. MSE can create flat regions, especially when predictions are very wrong, so the model stops learning.
+
+Implementing Logistic Regression in PyTorch
+
+A logistic regression model is:
+
+1. A **linear layer** (computes $z = wX + b$)
+2. Followed by a **sigmoid activation** (squashes $z$ into $[0, 1]$ to give a probability)
+
+Then:
+
+- **Binary cross-entropy loss** (`nn.BCELoss`) compares predicted probabilities with actual labels.
+- An **optimizer** such as stochastic gradient descent (SGD) updates model parameters based on gradients.
+
+### The Model in Code
+
+```python
+import torch
+import torch.nn as nn
+
+# Logistic regression = Linear + Sigmoid
+model = nn.Sequential(
+    nn.Linear(in_features=2, out_features=1),  # linear layer
+    nn.Sigmoid()                                # probability output
+)
+
+# Loss function
+loss_fn = nn.BCELoss()
+
+# Optimizer
+optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
+```
 
 
