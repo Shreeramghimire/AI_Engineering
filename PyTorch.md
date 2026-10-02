@@ -598,4 +598,26 @@ With **sigmoid + cross-entropy**, the $\sigma'(z)$ term cancels out mathematical
 
 ---
 
+**Maximum Likelihood Estimation (MLE)** says: find the parameters θ that make the observed data most probable.
+
+For binary labels modeled as Bernoulli:
+
+$$
+P(y \mid \hat{y}) = \hat{y}^y (1-\hat{y})^{1-y}
+$$
+
+Take the **log** (easier to work with):
+
+$$
+\log P(y \mid \hat{y}) = y \log(\hat{y}) + (1-y)\log(1-\hat{y})
+$$
+
+Now **negate** it (because we *minimize* loss, but MLE *maximizes* likelihood):
+
+$$
+\text{Loss} = -\big[ y \log(\hat{y}) + (1-y)\log(1-\hat{y}) \big]
+$$
+
+**That's exactly cross-entropy loss!** So minimizing BCE = maximizing likelihood. They're the same thing.
+
 
