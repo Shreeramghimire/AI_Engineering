@@ -778,4 +778,10 @@ with torch.no_grad():
 
 - Probability ≤ 0.5 → predict not spam (0)
 
-  
+
+## Advanced Optimization, Regularization, and Generalization in PyTorch
+
+
+### 1. The Mountain-in-the-Fog Analogy
+
+
