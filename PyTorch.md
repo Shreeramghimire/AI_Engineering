@@ -544,4 +544,17 @@ Worse, if applicant A were predicted at 0.49 (wrong), the loss jumps to 1 — bu
 
 ## Cross-Entropy Loss vs. MSE
 
+Imagine we're building a spam filter. For each email, your model outputs a **probability**:
+
+- "90% sure this is spam" → prediction = 0.9
+- "60% sure this is not spam" → prediction = 0.4 (since not-spam = 1 − 0.6)
+
+But the true label is binary: **spam (1)** or **not spam (0)**.
+
+So the question becomes: **How do we score the model's probability predictions against a 0/1 label?**
+
+That's exactly what a **loss function** does.
+
+---
+
 
