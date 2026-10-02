@@ -773,3 +773,9 @@ with torch.no_grad():
     probabilities = model(X)
     predictions = (probabilities > 0.5).float()   # 1 if spam, 0 if not
 ```
+
+- Probability > 0.5 → predict spam (1)
+
+- Probability ≤ 0.5 → predict not spam (0)
+
+  
