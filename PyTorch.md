@@ -686,3 +686,15 @@ model = nn.Linear(2, 1)                # no sigmoid
 loss_fn = nn.BCEWithLogitsLoss()       # applies sigmoid + BCE internally
 ```
 
+## Applying Cross-Entropy Loss in PyTorch: Logistic Regression for Spam Detection
+
+Imagine we're trying to teach a computer to decide if an email is spam or not. The computer guesses a probability, like saying "I'm 70% sure this email is spam." Cross-entropy loss is like a score that tells the computer how good or bad its guess is compared to the true answer (spam or not spam). If the guess is close to the truth, the score is low (which is good), and if it's far off, the score is high (which means the computer needs to learn more).
+
+This score is special because it changes smoothly as the computer adjusts its guesses, like a gentle hill that guides the computer downhill toward better answers. This smoothness helps the computer learn step-by-step by following the slope of the hill (using gradients) to improve its guesses. In PyTorch, this process is done by creating a simple model that predicts probabilities, using cross-entropy loss to measure errors, and an optimizer to update the model's settings until it gets better at classifying emails correctly.
+
+- **Cross-entropy loss** measures how well predicted probabilities match true class labels, providing a **smooth and continuous loss surface**.
+
+- This smoothness allows **gradient-based optimization** methods like gradient descent to update model parameters efficiently **without stalling**.
+
+
+
