@@ -871,5 +871,14 @@ Smoothly decay LR following a cosine curve — very popular in modern training.
 ```python
 scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=50)
 ```
+**Warm-Up**
 
+Start with a very small LR, then gradually increase. This stabilizes early training, especially in large models.
 
+```python
+def warmup_lambda(epoch):
+    if epoch < 5:
+        return (epoch + 1) / 5
+    return 1.0
+```
+scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, warmup_lambda)
