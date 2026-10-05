@@ -912,4 +912,10 @@ Three things to notice:
 
 That last property is why softmax is used as a probability function.
 
+**Why Exponentiate?**
+
+- `e^x` is always positive → no negative "probabilities."
+- It exaggerates differences: if `z1=5` and `z2=1`, then `e^5/e^1≈55`, so class 1 gets ~55× the probability of class 2.
+- It's smooth and differentiable → perfect for gradient descent.
+
 
