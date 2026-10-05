@@ -884,3 +884,5 @@ def warmup_lambda(epoch):
 scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, warmup_lambda)
 
 # Part 2
+
+## Softmax function
