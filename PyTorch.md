@@ -918,4 +918,37 @@ That last property is why softmax is used as a probability function.
 - It exaggerates differences: if $z1=5$ and $z2=1$, then $e^5/e^1≈55$, so class 1 gets ~55× the probability of class 2.
 - It's smooth and differentiable → perfect for gradient descent.
 
+**Simple example:**
+Imagine we train a neural network to look at an image and classify it into one of three classes (K = 3): Cat, Dog, or Bird.
+
+1. The Inputs (K Arbitrary Logits)
+
+The model looks at a picture and outputs the following raw scores (logits):
+• Cat: 2.0
+• Dog: 1.0
+• Bird: -1.0
+
+They don't add up to 1, and one value is negative.
+
+2. How Softmax Transforms Them
+
+The Softmax function does this in two steps:
+
+1. Exponentiates the scores (\(e^{logit}\)): This turns all negative numbers into positive numbers and makes larger numbers stand out more.
+
+	• $(\text{Cat} \rightarrow e^{2.0} \approx 7.39\)$
+	• $(\text{Dog} \rightarrow e^{1.0} \approx 2.72\)$
+	• $(\text{Bird} \rightarrow e^{-1.0} \approx 0.37\)$
+	• Total Sum of Exponents = $(7.39 + 2.72 + 0.37 = \mathbf{10.48}\)$
+
+2. Normalizes them: Divide each exponent by the total sum so they add up to 1.
+   
+	• Cat Probability: $(7.39 / 10.48 = \mathbf{0.705}\ (70.5\%)\)$
+	• Dog Probability: $(2.72 / 10.48 = \mathbf{0.260}\ (26.0\%)\)$
+	• Bird Probability: $(0.37 / 10.48 = \mathbf{0.035}\ (3.5\%)\)$
+
+3. The Result
+
+• Sum check: $(0.705 + 0.260 + 0.035 = \mathbf{1.0}\)$ (They sum to exactly 1).
+• Order check: The original logit order was Cat (2.0) > Dog (1.0) > Bird (-1.0). The final probability order is Cat (70.5%) > Dog (26.0%) > Bird (3.5%). The order is perfectly preserved.
 
