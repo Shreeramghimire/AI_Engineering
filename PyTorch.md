@@ -882,3 +882,5 @@ def warmup_lambda(epoch):
     return 1.0
 ```
 scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, warmup_lambda)
+
+# Part 2
