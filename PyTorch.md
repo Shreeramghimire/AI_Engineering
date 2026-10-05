@@ -946,11 +946,11 @@ The Softmax function does this in two steps:
 
 3. Normalizes them: Divide each exponent by the total sum so they add up to 1.
    
-	• Cat Probability: $(7.39 / 10.48 = \mathbf{0.705}\ (70.5\%)\)$
+	• Cat Probability: $(7.39 / 10.48 = \mathbf{0.705}\ (70.5\%)$
 
-	• Dog Probability: $(2.72 / 10.48 = \mathbf{0.260}\ (26.0\%)\)$
+	• Dog Probability: $(2.72 / 10.48 = \mathbf{0.260}\ (26.0\%)$
 
-	• Bird Probability: $(0.37 / 10.48 = \mathbf{0.035}\ (3.5\%)\)$
+	• Bird Probability: $(0.37 / 10.48 = \mathbf{0.035}\ (3.5\%)$
 
 5. The Result
 
