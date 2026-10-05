@@ -886,3 +886,30 @@ scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, warmup_lambda)
 # Part 2
 
 ## Softmax function
+
+In General words:
+
+Imagine we're at a carnival booth where you throw darts at 10 targets labeled 0 through 9. Each dart we throw produces a "score" for every target: some higher, some lower. But these scores are wild numbers: 2.3, -1.5, 8.7, etc. They're not easy to interpret.
+
+Softmax is the booth operator who takes those raw scores and converts them into percentages that add up to 100%. If our scores were [2.3, -1.5, 8.7], softmax might say: "Target 0: 5%, Target 1: 0.5%, Target 2: 94.5%." Now we can say, "The model is 94.5% confident this is a 2."
+
+The word "soft" means it doesn't just pick the winner (that would be hard max, or argmax). Instead, it gives every class a small slice of probability, weighted by how high its score was. The winner still gets the biggest slice.
+
+
+
+Given raw scores (called **logits**) `z=[z1,z2,...,zK]`:
+
+```math
+\text{softmax}(z_i)=\frac{e^{z_i}}{\sum_{j=1}^{K}e^{z_j}}
+```
+Three things to notice:
+
+- Exponentiate each score → makes everything positive and amplifies differences.
+
+- Sum all the exponentials → this is the denominator.
+
+- Divide each by the sum → every output is between 0 and 1, and all outputs sum to 1.
+
+That last property is why softmax is used as a probability function.
+
+
