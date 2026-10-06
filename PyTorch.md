@@ -957,7 +957,8 @@ The Softmax function does this in two steps:
 • Sum check: $(0.705 + 0.260 + 0.035 = \mathbf{1.0}\)$ (They sum to exactly 1).
 
 • Order check: The original logit order was Cat (2.0) > Dog (1.0) > Bird (-1.0). The final probability order is Cat (70.5%) > Dog (26.0%) > Bird (3.5%). The order is perfectly preserved.
-'''python
+
+```python
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -974,4 +975,4 @@ logits = multi_model(x)                   # [batch, 10]
 loss = nn.CrossEntropyLoss()(logits, targets)   # softmax inside
 probs = F.softmax(logits, dim=1)          # [batch, 10]
 preds = torch.argmax(probs, dim=1)        # [batch]
-'''
+```
