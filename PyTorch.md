@@ -952,9 +952,5 @@ The Softmax function does this in two steps:
 
 	• Bird Probability: $0.37 / 10.48 = \mathbf{0.035}\$ (3.5%)
 
-5. The Result
 
-• Sum check: $(0.705 + 0.260 + 0.035 = \mathbf{1.0}\)$ (They sum to exactly 1).
-
-• Order check: The original logit order was Cat (2.0) > Dog (1.0) > Bird (-1.0). The final probability order is Cat (70.5%) > Dog (26.0%) > Bird (3.5%). The order is perfectly preserved.
 
