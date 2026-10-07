@@ -1,1 +1,20 @@
+flowchart TD
+    A[Input Image] --> B[Neural Network<br/>nn.Module]
+    B --> C[Raw Logits<br/>shape: batch, K]
 
+    C --> D{Path?}
+
+    D -->|TRAINING| E[CrossEntropyLoss<br/>softmax fused inside]
+    E --> F[loss.backward]
+    F --> G[optimizer.step]
+
+    D -->|INFERENCE| H[F.softmax<br/>dim=1]
+    H --> I[torch.argmax<br/>dim=1]
+    I --> J[Prediction]
+
+    style A fill:#e1f5ff,stroke:#0366d6
+    style C fill:#fff4e1,stroke:#d68910
+    style E fill:#ffe1e1,stroke:#d73a49
+    style H fill:#e1ffe1,stroke:#28a745
+    style I fill:#e1ffe1,stroke:#28a745
+    style J fill:#f0e1ff,stroke:#6f42c1
