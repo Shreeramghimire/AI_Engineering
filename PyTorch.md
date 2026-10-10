@@ -983,3 +983,10 @@ In binary classification, we have one output neuron that produces a single score
 
 ### 1. Linear Equations Generate Logits for Each Class
 
+For a network with K classes, each class k has its own weight vector wₖ and bias bₖ. Given an input vector x (features from the previous layer), the logit for class k is:
+
+zₖ = wₖ · x + bₖ
+
+Stacking all classes together:
+
+z = Wx + b        where W is (K × D), z is (K,)
