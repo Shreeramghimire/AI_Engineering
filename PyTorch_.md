@@ -1044,6 +1044,16 @@ import torch.nn.functional as F
 
 ### Four Key Activation Functions
 
+#### 1. Sigmoid
+Formula: σ(x) = 1 / (1 + e⁻ˣ)
+
+Range: (0, 1)
+
+```python
+x = torch.tensor([-2.0, -0.5, 0.0, 0.5, 2.0])
+print(torch.sigmoid(x))
+# tensor([0.1192, 0.3775, 0.5000, 0.6225, 0.8808])
+```
 
 ---
 ## Quick Reference
