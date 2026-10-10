@@ -1031,3 +1031,11 @@ print(probs)
 # tensor([[0.32, 0.07, 0.61]])
 print(probs.sum(dim=1))   # tensor([1.])  ← sums to 1
 ```
+
+**Why exp?**
+
+- exp is always positive → no negative probabilities
+
+- It's monotonic → ranking of logits is preserved
+
+- It amplifies differences (logit gap of 2 → probability ratio of e² ≈ 7.4)
