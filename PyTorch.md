@@ -1095,5 +1095,5 @@ loss.backward()
 optimizer.step()
 ```
 
-
+We should not apply softmax before CrossEntropyLoss; it will double-apply and hurt training.
 
