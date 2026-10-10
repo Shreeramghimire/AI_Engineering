@@ -1,9 +1,6 @@
 **PyTorch** is a Python library for building and training machine learning models.
 
 
-
-# Part 1
-
 ## Linear Regression in PyTorch
 
 For simple linear regression, we could use Excel or plain math. But PyTorch gives:
