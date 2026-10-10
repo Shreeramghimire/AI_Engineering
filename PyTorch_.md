@@ -1036,6 +1036,12 @@ In PyTorch, activations can be applied in two ways:
 
 2. As functional calls: F.sigmoid(x), F.relu(x) (used in forward())
 
+```python
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+```
+
 ---
 ## Quick Reference
 
