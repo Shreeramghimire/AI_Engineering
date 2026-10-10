@@ -1144,7 +1144,22 @@ print(F.silu(x))          # PyTorch's name for Swish
 
 ---
 
-## Part 10 MNIST dataset and validation result in PyTorch
+## Part 10: MNIST dataset and validation result in PyTorch
+
+### 10.1 What is MNIST dataset?
+
+The MNIST dataset (Modified National Institute of Standards and Technology dataset) is a standard benchmark collection of 70,000 grayscale images of handwritten digits (0 through 9) used to train and test machine learning and computer vision models. Often called the "Hello World" of data science, it was created in 1998 by Yann LeCun, Corinna Cortes, and Christopher Burges by remixing samples from the original NIST datasets.
+
+
+**Key Dataset Features**
+
+• Total Images: 70,000 grayscale images
+• Training Set: 60,000 images
+• Testing Set: 10,000 images
+• Image Size: 28 × 28 pixels (784 total pixels per image)
+• Classes: 10 distinct classes representing the digits 0 through 9
+• Pixel Values: Range from 0 (black) to 255 (white), commonly normalized to a 0-to-1 scale during preprocessing.
+
 
 
 ---
