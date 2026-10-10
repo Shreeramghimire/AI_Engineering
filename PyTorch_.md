@@ -1093,6 +1093,23 @@ Formula: ReLU(x) = max(0, x)
 
 Range: [0, ∞)
 
+```python
+x = torch.tensor([-2.0, -0.5, 0.0, 0.5, 2.0])
+print(F.relu(x))
+# tensor([0.0000, 0.0000, 0.0000, 0.5000, 2.0000])
+```
+**Characteristics:**
+
+- Computationally cheap (just a comparison)
+
+- No saturation for positive values → mitigates vanishing gradients
+
+- Sparse activation (some neurons output exactly 0)
+
+- Problem: "Dying ReLU" — neurons stuck at 0 never recover
+
+**Best used for:** Default choice for hidden layers in CNNs and MLPs.
+
 
 ---
 ## Quick Reference
