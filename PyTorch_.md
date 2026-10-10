@@ -639,7 +639,7 @@ loss_fn = nn.BCEWithLogitsLoss()       # applies sigmoid + BCE internally
 
 ---
 
-## Part 6 — Logistic Regression in PyTorch (Spam Detection)
+## Part 6: Logistic Regression in PyTorch (Spam Detection)
 
 Now we put Parts 3–5 together. Cross-entropy loss tells the computer how good or bad its guess is compared with the true answer (spam or not spam): if the guess is close to the truth, the loss is low; if it's far off, the loss is high and the model needs to learn more. In PyTorch, we create a simple model that predicts probabilities, use cross-entropy to measure errors, and use an optimizer to update the model's parameters until it classifies emails correctly.
 
@@ -720,7 +720,7 @@ with torch.no_grad():
 
 ---
 
-## Part 7 — Multi-Class Classification with Softmax
+## Part 7: Multi-Class Classification with Softmax
 
 ### 7.1 From one score to many
 
@@ -898,13 +898,13 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# --- Binary logistic regression ---
+# Binary logistic regression 
 binary_model = nn.Linear(784, 1)          # one output
 logits = binary_model(x)                  # [batch, 1]
 loss = nn.BCEWithLogitsLoss()(logits.squeeze(), targets)  # sigmoid inside
 probs = torch.sigmoid(logits)
 
-# --- Multi-class softmax classifier ---
+# Multi-class softmax classifier 
 multi_model = nn.Linear(784, 10)          # ten outputs (one per class)
 logits = multi_model(x)                   # [batch, 10]
 loss = nn.CrossEntropyLoss()(logits, targets)   # softmax inside
@@ -914,7 +914,7 @@ preds = torch.argmax(probs, dim=1)        # [batch]
 
 ---
 
-## Part 8 — Better Training: Optimizers and Learning-Rate Strategies
+## Part 8: Better Training: Optimizers and Learning-Rate Strategies
 
 So far we have used plain SGD. This part covers smarter optimizers and ways to adjust the learning rate during training.
 
