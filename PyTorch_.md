@@ -1,6 +1,6 @@
 # PyTorch (From Linear Regression to Multi-Class Classification)
 
-## Part 1 — PyTorch Foundations
+## Part 1: PyTorch Foundations
 
 ### 1.1 What is PyTorch?
 
@@ -38,7 +38,7 @@ print(x.grad)  # tensor(4.)  ← dy/dx = 2x = 4
 
 ---
 
-## Part 2 — Regression: Predicting a Number
+## Part 2: Regression: Predicting a Number
 
 ### 2.1 Linear regression: the core idea
 
@@ -191,7 +191,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-# ── 1. Data ──────────────────────────────────────────
+# 1. Data
 # Inputs: [flour, sugar, eggs]
 X = torch.tensor([
     [2.0, 1.0, 3.0],
@@ -210,16 +210,16 @@ y = torch.tensor([
     [280.0, 7.5],
 ])
 
-# ── 2. Model ─────────────────────────────────────────
+# 2. Model
 model = nn.Linear(in_features=3, out_features=2)
 
-# ── 3. Loss ──────────────────────────────────────────
+# 3. Loss 
 criterion = nn.MSELoss()
 
-# ── 4. Optimizer ─────────────────────────────────────
+# 4. Optimizer 
 optimizer = optim.SGD(model.parameters(), lr=0.0001)
 
-# ── 5. Training Loop ─────────────────────────────────
+# 5. Training Loop 
 for epoch in range(5000):
     y_pred = model(X)                 # Forward → shape (5, 2)
     loss = criterion(y_pred, y)       # Aggregated loss over both outputs
@@ -230,7 +230,7 @@ for epoch in range(5000):
     if (epoch + 1) % 1000 == 0:
         print(f'Epoch {epoch+1}, Loss: {loss.item():.4f}')
 
-# ── 6. Predict ───────────────────────────────────────
+# 6. Predict 
 model.eval()
 with torch.no_grad():
     new_recipe = torch.tensor([[2.5, 1.5, 2.5]])
@@ -242,7 +242,7 @@ with torch.no_grad():
 
 ---
 
-## Part 3 — Binary Classification: Predicting a Category
+## Part 3: Binary Classification: Predicting a Category
 
 ### 3.1 Linear classifiers and decision boundaries
 
@@ -377,7 +377,7 @@ $$\sigma(2.5) = \frac{1}{1 + e^{-2.5}} \approx 0.924$$
 
 ---
 
-## Part 4 — Probability Foundations: Where Classification Losses Come From
+## Part 4: Probability Foundations: Where Classification Losses Come From
 
 Before we can pick a loss function for classification, we need a way to measure how well predicted probabilities explain the labels we actually observed. Bernoulli distributions, likelihood, and maximum likelihood estimation (MLE) give us that. They are the foundation of cross-entropy in Part 5.
 
@@ -441,11 +441,11 @@ flips = torch.tensor([1., 1., 0., 1., 0., 1., 1., 0., 1., 1.])
 n = flips.numel()
 k = flips.sum()
 
-# --- Closed-form MLE ---
+# Closed-form MLE 
 theta_mle = k / n
 print(f"Closed-form MLE: {theta_mle.item():.4f}")  # 0.7
 
-# --- Via gradient descent (how PyTorch really works) ---
+#  Via gradient descent (how PyTorch really works)  
 # Use logit (unconstrained) so theta stays in (0,1)
 logit = torch.zeros(1, requires_grad=True)
 optimizer = torch.optim.SGD([logit], lr=0.5)
@@ -463,7 +463,7 @@ print(f"Gradient-descent MLE: {torch.sigmoid(logit).item():.4f}")
 
 ---
 
-## Part 5 — Loss Functions for Classification
+## Part 5: Loss Functions for Classification
 
 Imagine we're building a spam filter. For each email, our model outputs a **probability**:
 
