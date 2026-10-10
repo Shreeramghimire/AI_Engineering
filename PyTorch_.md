@@ -1110,6 +1110,8 @@ print(F.relu(x))
 
 **Best used for:** Default choice for hidden layers in CNNs and MLPs.
 
+#### 4. Swish (a.k.a. SiLU — Sigmoid Linear Unit)
+
 
 ---
 ## Quick Reference
