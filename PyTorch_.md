@@ -1087,6 +1087,9 @@ print(torch.tanh(x))
 
 **Best used for:** Hidden layers in RNNs, or when you need negative outputs.
 
+#### 3.ReLU (Rectified Linear Unit)
+
+
 ---
 ## Quick Reference
 
