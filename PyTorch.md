@@ -1078,3 +1078,10 @@ print("Logits:\n", logits)
 print("Probabilities:\n", probs)
 print("Predicted classes:", preds)
 ```
+
+**Training: Use CrossEntropyLoss, Not Softmax + NLL**
+
+PyTorch's nn.CrossEntropyLoss combines log_softmax + negative log-likelihood in one numerically stable operation. So during training we feed it raw logits:
+
+
+
