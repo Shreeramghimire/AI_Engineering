@@ -1187,6 +1187,15 @@ PyTorch provides built-in utilities and pre-packaged loaders specifically for th
 
 • Efficient Batching: By wrapping the MNIST dataset in a PyTorch DataLoader, you can automatically split the 60,000 training images into smaller batches, shuffle them, and feed them into a neural network during training.
 
+#### Validation results in PyTorch
+
+| **Symptom** | **Diagnosis** | **Fix** |
+| :--- | :--- | :--- |
+| Train loss ↓, Val loss ↓ | Healthy learning | Keep training |
+| Train loss ↓, Val loss ↑ | **Overfitting** | Add dropout, weight decay, more data |
+| Train loss high, Val loss high | **Underfitting** | Bigger model, train longer |
+| Val accuracy ≫ Test accuracy | Lucky validation split | Re-split or use cross-validation |
+
 ---
 ## Quick Reference
 
