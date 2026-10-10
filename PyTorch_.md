@@ -1055,6 +1055,17 @@ print(torch.sigmoid(x))
 # tensor([0.1192, 0.3775, 0.5000, 0.6225, 0.8808])
 ```
 
+**Characteristics:**
+
+- Smooth, S-shaped curve
+
+- Outputs interpretable as probabilities
+
+Problems: vanishing gradients for large |x| (saturation), outputs not zero-centered
+
+**Best used for:** Final layer of binary classification (with BCE loss), or gates in LSTMs/GRUs.
+
+
 ---
 ## Quick Reference
 
