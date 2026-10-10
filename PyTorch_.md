@@ -1028,7 +1028,13 @@ scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, warmup_lambda)
 
 ### What is an activation function?
 
+An activation function is a non-linear transformation applied to the output of a neuron (or layer). Without it, stacking linear layers would collapse into a single linear transformation — the network could only learn linear relationships. Activation functions inject non-linearity, enabling the network to approximate complex functions.
 
+In PyTorch, activations can be applied in two ways:
+
+1. As modules: nn.Sigmoid(), nn.ReLU() (used inside nn.Sequential)
+
+2. As functional calls: F.sigmoid(x), F.relu(x) (used in forward())
 
 ---
 ## Quick Reference
