@@ -1048,3 +1048,33 @@ The predicted class is the one with the highest logit; equivalently, the highest
 predicted_class = torch.argmax(logits, dim=1)
 print(predicted_class)   # tensor([2])  ← class index 2 has the largest logit
 ```
+argmax returns the index, not the value. In this example, logit 0.87 was largest, so class 2 wins.
+
+**Putting It All Together: A Full PyTorch Example**
+
+```python
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+class MultiClassNet(nn.Module):
+    def __init__(self, n_features, n_classes):
+        super().__init__()
+        self.linear = nn.Linear(n_features, n_classes)
+    
+    def forward(self, x):
+        logits = self.linear(x)          # (batch, n_classes)
+        return logits                    # return logits, NOT softmax
+
+model = MultiClassNet(n_features=4, n_classes=3)
+x = torch.randn(5, 4)                    # batch of 5 samples
+logits = model(x)                        # (5, 3)
+
+# --- Inference ---
+probs = F.softmax(logits, dim=1)         # (5, 3), rows sum to 1
+preds = torch.argmax(logits, dim=1)      # (5,), class indices
+
+print("Logits:\n", logits)
+print("Probabilities:\n", probs)
+print("Predicted classes:", preds)
+```
