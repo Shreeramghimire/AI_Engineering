@@ -990,3 +990,19 @@ zₖ = wₖ · x + bₖ
 Stacking all classes together:
 
 z = Wx + b        where W is (K × D), z is (K,)
+
+In PyTorch, this is simply a *nn.Linear* layer:
+
+import torch
+import torch.nn as nn
+
+# 4 input features → 3 classes
+
+```python
+linear = nn.Linear(in_features=4, out_features=3)
+
+x = torch.tensor([[1.0, 2.0, 0.5, -1.0]])   # shape: (1, 4)
+logits = linear(x)                            # shape: (1, 3)
+print(logits)
+# tensor([[ 0.42, -1.13,  0.87]], grad_fn=<AddmmBackward>)
+```
