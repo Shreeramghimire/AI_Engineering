@@ -1026,7 +1026,7 @@ scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, warmup_lambda)
 
 ## Part 9: Activation Functions in PyTorch
 
-### What is an activation function?
+### 9.1 What is an activation function?
 
 An activation function is a non-linear transformation applied to the output of a neuron (or layer). Without it, stacking linear layers would collapse into a single linear transformation — the network could only learn linear relationships. Activation functions inject non-linearity, enabling the network to approximate complex functions.
 
@@ -1042,7 +1042,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 ```
 
-### Four Key Activation Functions
+### 9.2 Four Key Activation Functions
 
 #### 1. Sigmoid
 
@@ -1133,7 +1133,7 @@ print(F.silu(x))          # PyTorch's name for Swish
 
 **Best used for:** Modern deep networks (EfficientNet, MobileNetV3), or when ReLU underperforms.
 
-### Comparison:
+### 9.3 Comparison:
 
 | **Function** | **Range** | **Zero-centered** | **Saturates** | **Risk of Dead Neurons** | **Typical Use** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -1141,6 +1141,10 @@ print(F.silu(x))          # PyTorch's name for Swish
 | Tanh | (-1, 1) | Yes | Yes | No | RNN hidden layers |
 | ReLU | [0, ∞) | No | No (positive side) | Yes | Hidden layers (default) |
 | Swish | (-0.28, ∞) | No | No | Rarely | Deep modern networks |
+
+---
+
+## Part 10 MNIST dataset and validation result in PyTorch
 
 
 ---
