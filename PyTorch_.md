@@ -1112,6 +1112,36 @@ print(F.relu(x))
 
 #### 4. Swish (a.k.a. SiLU — Sigmoid Linear Unit)
 
+Formula: Swish(x) = x · σ(x) = x / (1 + e⁻ˣ)
+
+Range: approximately (-0.278, ∞)
+
+```python
+print(F.silu(x))          # PyTorch's name for Swish
+# tensor([-0.2384, -0.1888,  0.0000,  0.3112,  1.7616])
+```
+
+**Characteristics:**
+
+- Smooth, non-monotonic (dips slightly negative)
+
+- Self-gated: the sigmoid acts as a learned gate on x
+
+- Often outperforms ReLU in deep networks (found via neural architecture search)
+
+- Slightly more expensive than ReLU
+
+**Best used for:** Modern deep networks (EfficientNet, MobileNetV3), or when ReLU underperforms.
+
+### Comparison:
+
+| **Function** | **Range** | **Zero-centered** | **Saturates** | **Risk of Dead Neurons** | **Typical Use** |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Sigmoid | (0, 1) | No | Yes | No | Binary output |
+| Tanh | (-1, 1) | Yes | Yes | No | RNN hidden layers |
+| ReLU | [0, ∞) | No | No (positive side) | Yes | Hidden layers (default) |
+| Swish | (-0.28, ∞) | No | No | Rarely | Deep modern networks |
+
 
 ---
 ## Quick Reference
