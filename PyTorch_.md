@@ -1077,6 +1077,16 @@ print(torch.tanh(x))
 # tensor([-0.9640, -0.4621,  0.0000,  0.4621,  0.9640])
 ```
 
+**Characteristics:**
+
+- Zero-centered (unlike sigmoid), which helps optimization
+
+- Still saturates → vanishing gradients remain a problem
+
+- Stronger gradients than sigmoid near zero
+
+**Best used for:** Hidden layers in RNNs, or when you need negative outputs.
+
 ---
 ## Quick Reference
 
