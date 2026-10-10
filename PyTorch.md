@@ -1039,3 +1039,5 @@ print(probs.sum(dim=1))   # tensor([1.])  ← sums to 1
 - It's monotonic → ranking of logits is preserved
 
 - It amplifies differences (logit gap of 2 → probability ratio of e² ≈ 7.4)
+
+### 3. Argmax Selects the Predicted Class
