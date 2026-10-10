@@ -1024,6 +1024,13 @@ scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, warmup_lambda)
 
 ---
 
+## Part 9: Activation Functions in PyTorch
+
+### What is an activation function?
+
+
+
+---
 ## Quick Reference
 
 ### Which setup for which task?
