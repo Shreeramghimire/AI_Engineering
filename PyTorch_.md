@@ -1042,6 +1042,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 ```
 
+### Four Key Activation Functions
+
+
 ---
 ## Quick Reference
 
