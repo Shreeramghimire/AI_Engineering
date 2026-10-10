@@ -1025,4 +1025,9 @@ softmax(z)ₖ = exp(zₖ) / Σⱼ exp(zⱼ)
 
 - Differences between logits are preserved as ratios of probabilities
 
- 
+```python
+probs = torch.softmax(logits, dim=1)
+print(probs)
+# tensor([[0.32, 0.07, 0.61]])
+print(probs.sum(dim=1))   # tensor([1.])  ← sums to 1
+```
