@@ -1161,6 +1161,13 @@ The MNIST dataset (Modified National Institute of Standards and Technology datas
 • Pixel Values: Range from 0 (black) to 255 (white), commonly normalized to a 0-to-1 scale during preprocessing.
 
 
+**Why It Is Used**
+
+• Standard Benchmark: It allows developers and researchers to quickly test and compare classification algorithms, such as Support Vector Machines (SVMs), K-Nearest Neighbors (KNN), and Convolutional Neural Networks (CNNs).
+• Education & Prototyping: Its small file size, clean labeling, and simple structure make it ideal for teaching core machine learning concepts without heavy computational demands.
+• Accessibility: The dataset can be loaded directly through popular frameworks like TensorFlow / Keras or PyTorch via built-in modules.
+
+**Use in PyTorch**
 
 ---
 ## Quick Reference
