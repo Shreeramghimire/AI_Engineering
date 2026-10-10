@@ -1006,3 +1006,6 @@ logits = linear(x)                            # shape: (1, 3)
 print(logits)
 # tensor([[ 0.42, -1.13,  0.87]], grad_fn=<AddmmBackward>)
 ```
+
+These raw outputs are called logits, unnormalized, unbounded real numbers. Each one measures "how strongly the model favors this class" relative to the others. They are not probabilities yet.
+
