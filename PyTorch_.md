@@ -1176,6 +1176,17 @@ The MNIST dataset (Modified National Institute of Standards and Technology datas
 
 **Use in PyTorch**
 
+PyTorch provides built-in utilities and pre-packaged loaders specifically for the MNIST dataset through its companion library, *torchvision*. Because MNIST is so universally used for learning and testing, PyTorch integrates it directly so developers don't have to download, extract, or format the raw binary files manually.
+
+
+**How PyTorch Interacts with MNIST**
+
+• Direct Downloading: The *torchvision.datasets.MNIST* module automatically downloads the entire dataset to your local machine with a single line of code.
+
+• Built-in Transformations: PyTorch lets you instantly convert the raw MNIST images into PyTorch Tensors and normalize their pixel values using *torchvision.transforms*.
+
+• Efficient Batching: By wrapping the MNIST dataset in a PyTorch DataLoader, you can automatically split the 60,000 training images into smaller batches, shuffle them, and feed them into a neural network during training.
+
 ---
 ## Quick Reference
 
