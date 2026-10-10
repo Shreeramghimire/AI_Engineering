@@ -1015,4 +1015,14 @@ Softmax transforms the logit vector z into a probability distribution:
 
 softmax(z)ₖ = exp(zₖ) / Σⱼ exp(zⱼ)
 
+**Key properties:**
 
+- Every output is in (0, 1)
+
+- All outputs sum to 1
+
+- Larger logits → larger probabilities
+
+- Differences between logits are preserved as ratios of probabilities
+
+ 
