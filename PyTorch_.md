@@ -1089,6 +1089,10 @@ print(torch.tanh(x))
 
 #### 3.ReLU (Rectified Linear Unit)
 
+Formula: ReLU(x) = max(0, x)
+
+Range: [0, ∞)
+
 
 ---
 ## Quick Reference
