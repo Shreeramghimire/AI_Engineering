@@ -1083,5 +1083,17 @@ print("Predicted classes:", preds)
 
 PyTorch's nn.CrossEntropyLoss combines log_softmax + negative log-likelihood in one numerically stable operation. So during training we feed it raw logits:
 
+```python
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+
+# targets: integer class labels, shape (batch,)
+targets = torch.tensor([0, 2, 1, 0, 2])
+
+loss = criterion(logits, targets)   # logits, NOT probs
+loss.backward()
+optimizer.step()
+```
+
 
 
