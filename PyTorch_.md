@@ -1045,6 +1045,7 @@ import torch.nn.functional as F
 ### Four Key Activation Functions
 
 #### 1. Sigmoid
+
 Formula: σ(x) = 1 / (1 + e⁻ˣ)
 
 Range: (0, 1)
@@ -1065,6 +1066,16 @@ Problems: vanishing gradients for large |x| (saturation), outputs not zero-cente
 
 **Best used for:** Final layer of binary classification (with BCE loss), or gates in LSTMs/GRUs.
 
+#### 2. Tanh (Hyperbolic Tangent)
+
+Formula: tanh(x) = (eˣ - e⁻ˣ) / (eˣ + e⁻ˣ)
+
+Range: (-1, 1)
+
+```python
+print(torch.tanh(x))
+# tensor([-0.9640, -0.4621,  0.0000,  0.4621,  0.9640])
+```
 
 ---
 ## Quick Reference
