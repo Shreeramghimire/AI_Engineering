@@ -1154,17 +1154,24 @@ The MNIST dataset (Modified National Institute of Standards and Technology datas
 **Key Dataset Features**
 
 • Total Images: 70,000 grayscale images
+
 • Training Set: 60,000 images
+
 • Testing Set: 10,000 images
+
 • Image Size: 28 × 28 pixels (784 total pixels per image)
+
 • Classes: 10 distinct classes representing the digits 0 through 9
+
 • Pixel Values: Range from 0 (black) to 255 (white), commonly normalized to a 0-to-1 scale during preprocessing.
 
 
 **Why It Is Used**
 
 • Standard Benchmark: It allows developers and researchers to quickly test and compare classification algorithms, such as Support Vector Machines (SVMs), K-Nearest Neighbors (KNN), and Convolutional Neural Networks (CNNs).
+
 • Education & Prototyping: Its small file size, clean labeling, and simple structure make it ideal for teaching core machine learning concepts without heavy computational demands.
+
 • Accessibility: The dataset can be loaded directly through popular frameworks like TensorFlow / Keras or PyTorch via built-in modules.
 
 **Use in PyTorch**
