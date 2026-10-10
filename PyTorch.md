@@ -1009,3 +1009,10 @@ print(logits)
 
 These raw outputs are called logits, unnormalized, unbounded real numbers. Each one measures "how strongly the model favors this class" relative to the others. They are not probabilities yet.
 
+### 2. Softmax Converts Logits into Probabilities
+
+Softmax transforms the logit vector z into a probability distribution:
+
+softmax(z)ₖ = exp(zₖ) / Σⱼ exp(zⱼ)
+
+
