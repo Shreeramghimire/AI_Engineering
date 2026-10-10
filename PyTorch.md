@@ -1041,3 +1041,10 @@ print(probs.sum(dim=1))   # tensor([1.])  ← sums to 1
 - It amplifies differences (logit gap of 2 → probability ratio of e² ≈ 7.4)
 
 ### 3. Argmax Selects the Predicted Class
+
+The predicted class is the one with the highest logit; equivalently, the highest probability (softmax is monotonic):
+
+```python
+predicted_class = torch.argmax(logits, dim=1)
+print(predicted_class)   # tensor([2])  ← class index 2 has the largest logit
+```
