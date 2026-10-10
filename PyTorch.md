@@ -976,3 +976,10 @@ loss = nn.CrossEntropyLoss()(logits, targets)   # softmax inside
 probs = F.softmax(logits, dim=1)          # [batch, 10]
 preds = torch.argmax(probs, dim=1)        # [batch]
 ```
+
+## Multi-Class Classification with Softmax in PyTorch
+
+In binary classification, we have one output neuron that produces a single score, and we apply a sigmoid to squash it into a probability. In multi-class classification, we have one output neuron per class, each producing its own score. Softmax then converts these scores into a probability distribution across all classes.
+
+### 1. Linear Equations Generate Logits for Each Class
+
