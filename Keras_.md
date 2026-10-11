@@ -1,20 +1,4 @@
-# Deep Learning with Keras: Study Guide
-### From Biological Neurons to Neural Network Architectures
-
-> **How to use this guide:** Each part builds on the one before it, so read them in order the first time. Short "How the pieces connect" notes link each part to the others.
-
-## Learning Roadmap
-
-| Part | Topic | Key question it answers |
-|---|---|---|
-| 1 | From biological to artificial neurons | What is a neuron, and how does an artificial one imitate it? |
-| 2 | Building blocks of a neural network | What are layers, activation functions, forward propagation, weights and biases? |
-| 3 | How a network learns | How do the loss, backpropagation, gradient descent, and the training loop fit together? |
-| 4 | Training problems and their fixes | Why can deep networks fail to learn (vanishing gradients), and what fixes it? |
-| 5 | Deep learning libraries | Where do TensorFlow, PyTorch, and Keras fit? |
-| 6 | Data preparation for Keras | How do we get our data into the right format? |
-| 7 | Building, training, and evaluating Keras models | How do we go from data to a trained, evaluated model? |
-| 8 | Types of neural network architectures | Which architecture (shallow, deep, CNN, RNN, LSTM, autoencoder, RBM) suits which problem? |
+# Deep Learning with Keras (From Biological Neurons to Neural Network Architectures)
 
 ### The big picture
 
