@@ -581,20 +581,20 @@ Let's compare both losses on a simple binary classification problem:
 import torch
 import torch.nn as nn
 
-# ---- Data: 4 samples, 2 features ----
+# Data: 4 samples, 2 features 
 X = torch.tensor([[1.0, 2.0],
                   [2.0, 1.0],
                   [-1.0, -2.0],
                   [-2.0, -1.0]])
 y = torch.tensor([[1.0], [1.0], [0.0], [0.0]])  # binary labels
 
-# ---- A tiny model: linear layer + sigmoid ----
+# A tiny model: linear layer + sigmoid 
 model = nn.Sequential(
     nn.Linear(2, 1),
     nn.Sigmoid()
 )
 
-# ---- Try both losses ----
+# Try both losses
 def train(loss_fn, name, lr=0.1, steps=200):
     # Reset the model
     torch.manual_seed(0)
@@ -639,7 +639,7 @@ loss_fn = nn.BCEWithLogitsLoss()       # applies sigmoid + BCE internally
 
 ---
 
-# Part 6 — Logistic Regression in PyTorch (Spam Detection)
+# Part 6: Logistic Regression in PyTorch (Spam Detection)
 
 Now we put Parts 3–5 together. Cross-entropy loss tells the computer how good or bad its guess is compared with the true answer (spam or not spam): if the guess is close to the truth, the loss is low; if it's far off, the loss is high and the model needs to learn more. In PyTorch, we create a simple model that predicts probabilities, use cross-entropy to measure errors, and use an optimizer to update the model's parameters until it classifies emails correctly.
 
@@ -720,7 +720,7 @@ with torch.no_grad():
 
 ---
 
-# Part 7 — Multi-Class Classification with Softmax
+# Part 7: Multi-Class Classification with Softmax
 
 ## 7.1 From one score to many
 
@@ -914,7 +914,7 @@ preds = torch.argmax(probs, dim=1)        # [batch]
 
 ---
 
-# Part 8 — Neural Networks with Hidden Layers (MNIST)
+# Part 8: Neural Networks with Hidden Layers (MNIST)
 
 So far, every model was a single `nn.Linear` layer, which can only draw a straight decision boundary. Adding **hidden layers with a non-linear activation** turns it into a neural network. This part and the next use one running example: **MNIST** handwritten digits, with the architecture **784 inputs → 100 hidden neurons → 10 outputs**.
 
@@ -1099,7 +1099,7 @@ for epoch in range(epochs):
 
 ---
 
-# Part 9 — Backpropagation and the Vanishing Gradient Problem
+# Part 9: Backpropagation and the Vanishing Gradient Problem
 
 ## 9.1 Backpropagation basics
 
@@ -1172,7 +1172,7 @@ If each layer's derivative is **less than 1** (a sigmoid's derivative never exce
 
 ---
 
-# Part 10 — Better Training: Optimizers and Learning-Rate Strategies
+# Part 10: Better Training: Optimizers and Learning-Rate Strategies
 
 So far we have mostly used plain SGD (the Part 8 training loop already used Adam). This part explains smarter optimizers and ways to adjust the learning rate during training, which is the optimizer side of the vanishing-gradient solutions in Section 9.5.
 
