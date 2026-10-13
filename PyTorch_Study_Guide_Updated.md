@@ -242,7 +242,7 @@ with torch.no_grad():
 
 ---
 
-# Part 3 — Binary Classification: Predicting a Category
+# Part 3: Binary Classification: Predicting a Category
 
 ## 3.1 Linear classifiers and decision boundaries
 
@@ -377,7 +377,7 @@ $$\sigma(2.5) = \frac{1}{1 + e^{-2.5}} \approx 0.924$$
 
 ---
 
-# Part 4 — Probability Foundations: Where Classification Losses Come From
+# Part 4: Probability Foundations: Where Classification Losses Come From
 
 Before we can pick a loss function for classification, we need a way to measure how well predicted probabilities explain the labels we actually observed. Bernoulli distributions, likelihood, and maximum likelihood estimation (MLE) give us that. They are the foundation of cross-entropy in Part 5.
 
@@ -441,11 +441,11 @@ flips = torch.tensor([1., 1., 0., 1., 0., 1., 1., 0., 1., 1.])
 n = flips.numel()
 k = flips.sum()
 
-# --- Closed-form MLE ---
+# Closed-form MLE
 theta_mle = k / n
 print(f"Closed-form MLE: {theta_mle.item():.4f}")  # 0.7
 
-# --- Via gradient descent (how PyTorch really works) ---
+# Via gradient descent (how PyTorch really works)
 # Use logit (unconstrained) so theta stays in (0,1)
 logit = torch.zeros(1, requires_grad=True)
 optimizer = torch.optim.SGD([logit], lr=0.5)
@@ -463,7 +463,7 @@ print(f"Gradient-descent MLE: {torch.sigmoid(logit).item():.4f}")
 
 ---
 
-# Part 5 — Loss Functions for Classification
+# Part 5: Loss Functions for Classification
 
 Imagine we're building a spam filter. For each email, our model outputs a **probability**:
 
