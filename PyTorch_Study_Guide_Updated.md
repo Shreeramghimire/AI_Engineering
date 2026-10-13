@@ -1,6 +1,6 @@
 # PyTorch (From Linear Regression to Multi-Class Neural Networks)
 
-# Part 1 — PyTorch Foundations
+# Part 1: PyTorch Foundations
 
 ## 1.1 What is PyTorch?
 
@@ -38,7 +38,7 @@ print(x.grad)  # tensor(4.)  ← dy/dx = 2x = 4
 
 ---
 
-# Part 2 — Regression: Predicting a Number
+# Part 2: Regression: Predicting a Number
 
 ## 2.1 Linear regression: the core idea
 
