@@ -1,25 +1,4 @@
-# PyTorch Study Guide
-### From Linear Regression to Multi-Class Neural Networks
-
-> **How to use this guide:** Each part builds on the one before it, so read them in order the first time. Use the **Quick Reference** at the end for revision.
-
-## Learning Roadmap
-
-| Part | Topic | Key question it answers |
-|---|---|---|
-| 1 | PyTorch foundations | What is PyTorch, and what are tensors and autograd? |
-| 2 | Regression | How do we train a model to predict a number? |
-| 3 | Binary classification | How do we predict a category (yes/no)? |
-| 4 | Probability foundations | Where do classification losses come from? (Bernoulli, likelihood, MLE) |
-| 5 | Loss functions for classification | Why cross-entropy and not MSE? |
-| 6 | Logistic regression in PyTorch | How do Parts 3–5 look as working code? |
-| 7 | Multi-class classification | How do we handle more than two classes? (Softmax) |
-| 8 | Neural networks with hidden layers | How do dense layers and forward propagation work on a real example (MNIST)? |
-| 9 | Backpropagation and vanishing gradients | How are gradients computed, and why can they fade in deep networks? |
-| 10 | Better training | Which optimizers and learning-rate strategies make training faster and more stable? |
-| — | Quick reference | One-page summary of what to use when |
-
----
+# PyTorch (From Linear Regression to Multi-Class Neural Networks)
 
 # Part 1 — PyTorch Foundations
 
