@@ -56,7 +56,7 @@
 > - create and use tensors
 > - compute gradients automatically with autograd
 
-## Part 1 — PyTorch Foundations
+## Part 1 PyTorch Foundations
 
 ### 1.1 What is PyTorch?
 
