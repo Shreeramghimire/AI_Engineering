@@ -945,7 +945,7 @@ model = MultiClassNet(n_features=4, n_classes=3)
 x = torch.randn(5, 4)                    # batch of 5 samples
 logits = model(x)                        # (5, 3)
 
-# --- Inference ---
+# Inference
 probs = F.softmax(logits, dim=1)         # (5, 3), rows sum to 1
 preds = torch.argmax(logits, dim=1)      # (5,), class indices
 
@@ -986,13 +986,13 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# --- Binary logistic regression ---
+# Binary logistic regression 
 binary_model = nn.Linear(784, 1)          # one output
 logits = binary_model(x)                  # [batch, 1]
 loss = nn.BCEWithLogitsLoss()(logits.squeeze(), targets)  # sigmoid inside
 probs = torch.sigmoid(logits)
 
-# --- Multi-class softmax classifier ---
+# Multi-class softmax classifier 
 multi_model = nn.Linear(784, 10)          # ten outputs (one per class)
 logits = multi_model(x)                   # [batch, 10]
 loss = nn.CrossEntropyLoss()(logits, targets)   # softmax inside
@@ -1060,7 +1060,7 @@ Maximizing the likelihood of the observed labels (maximum likelihood estimation)
 > - trace forward propagation and the tensor shapes at each layer
 > - explain how backpropagation computes gradients, and why they can vanish in deep networks
 
-## Part 8 — Neural Networks with Hidden Layers (MNIST)
+## Part 8 Neural Networks with Hidden Layers (MNIST)
 
 So far, every model was a single `nn.Linear` layer, which can only draw a straight decision boundary. Adding **hidden layers with a non-linear activation** turns it into a neural network. This part uses one running example: **MNIST** handwritten digits, with the architecture **784 inputs → 100 hidden neurons → 10 outputs**. Later parts reuse it.
 
