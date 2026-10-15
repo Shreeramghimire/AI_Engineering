@@ -126,7 +126,7 @@ Tensors are arrays (like NumPy arrays) that can run on GPUs. Autograd automatica
 > - explain why cross-entropy (maximum likelihood), not MSE, is the loss for classification
 > - turn scores into probabilities with sigmoid and softmax
 
-## Part 2 — Regression: Predicting a Number
+## Part 2 Regression: Predicting a Number
 
 ### 2.1 Linear regression: the core idea
 
@@ -279,7 +279,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-# ── 1. Data ──────────────────────────────────────────
+#  1. Data 
 # Inputs: [flour, sugar, eggs]
 X = torch.tensor([
     [2.0, 1.0, 3.0],
@@ -298,16 +298,16 @@ y = torch.tensor([
     [280.0, 7.5],
 ])
 
-# ── 2. Model ─────────────────────────────────────────
+# 2. Model 
 model = nn.Linear(in_features=3, out_features=2)
 
-# ── 3. Loss ──────────────────────────────────────────
+# 3. Loss 
 criterion = nn.MSELoss()
 
-# ── 4. Optimizer ─────────────────────────────────────
+# 4. Optimizer 
 optimizer = optim.SGD(model.parameters(), lr=0.0001)
 
-# ── 5. Training Loop ─────────────────────────────────
+# 5. Training Loop 
 for epoch in range(5000):
     y_pred = model(X)                 # Forward → shape (5, 2)
     loss = criterion(y_pred, y)       # Aggregated loss over both outputs
@@ -318,7 +318,7 @@ for epoch in range(5000):
     if (epoch + 1) % 1000 == 0:
         print(f'Epoch {epoch+1}, Loss: {loss.item():.4f}')
 
-# ── 6. Predict ───────────────────────────────────────
+# 6. Predict 
 model.eval()
 with torch.no_grad():
     new_recipe = torch.tensor([[2.5, 1.5, 2.5]])
