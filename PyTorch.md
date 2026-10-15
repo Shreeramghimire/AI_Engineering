@@ -330,7 +330,7 @@ with torch.no_grad():
 
 ---
 
-## Part 3 — Binary Classification: Predicting a Category
+## Part 3 Binary Classification: Predicting a Category
 
 ### 3.1 Linear classifiers and decision boundaries
 
@@ -465,7 +465,7 @@ $$\sigma(2.5) = \frac{1}{1 + e^{-2.5}} \approx 0.924$$
 
 ---
 
-## Part 4 — Probability Foundations: Where Classification Losses Come From
+## Part 4 Probability Foundations: Where Classification Losses Come From
 
 Before we can pick a loss function for classification, we need a way to measure how well predicted probabilities explain the labels we actually observed. Bernoulli distributions, likelihood, and maximum likelihood estimation (MLE) give us that. They are the foundation of cross-entropy in Part 5.
 
