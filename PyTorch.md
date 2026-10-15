@@ -529,11 +529,11 @@ flips = torch.tensor([1., 1., 0., 1., 0., 1., 1., 0., 1., 1.])
 n = flips.numel()
 k = flips.sum()
 
-# --- Closed-form MLE ---
+# Closed-form MLE 
 theta_mle = k / n
 print(f"Closed-form MLE: {theta_mle.item():.4f}")  # 0.7
 
-# --- Via gradient descent (how PyTorch really works) ---
+# Via gradient descent (how PyTorch really works) 
 # Use logit (unconstrained) so theta stays in (0,1)
 logit = torch.zeros(1, requires_grad=True)
 optimizer = torch.optim.SGD([logit], lr=0.5)
@@ -551,7 +551,7 @@ print(f"Gradient-descent MLE: {torch.sigmoid(logit).item():.4f}")
 
 ---
 
-## Part 5 — Loss Functions for Classification
+## Part 5 Loss Functions for Classification
 
 Imagine we're building a spam filter. For each email, our model outputs a **probability**:
 
@@ -669,20 +669,20 @@ Let's compare both losses on a simple binary classification problem:
 import torch
 import torch.nn as nn
 
-# ---- Data: 4 samples, 2 features ----
+# Data: 4 samples, 2 features 
 X = torch.tensor([[1.0, 2.0],
                   [2.0, 1.0],
                   [-1.0, -2.0],
                   [-2.0, -1.0]])
 y = torch.tensor([[1.0], [1.0], [0.0], [0.0]])  # binary labels
 
-# ---- A tiny model: linear layer + sigmoid ----
+# A tiny model: linear layer + sigmoid 
 model = nn.Sequential(
     nn.Linear(2, 1),
     nn.Sigmoid()
 )
 
-# ---- Try both losses ----
+# Try both losses 
 def train(loss_fn, name, lr=0.1, steps=200):
     # Reset the model
     torch.manual_seed(0)
@@ -727,7 +727,7 @@ loss_fn = nn.BCEWithLogitsLoss()       # applies sigmoid + BCE internally
 
 ---
 
-## Part 6 — Logistic Regression in PyTorch (Spam Detection)
+## Part 6 Logistic Regression in PyTorch (Spam Detection)
 
 Now we put Parts 3–5 together. Cross-entropy loss tells the computer how good or bad its guess is compared with the true answer (spam or not spam): if the guess is close to the truth, the loss is low; if it's far off, the loss is high and the model needs to learn more. In PyTorch, we create a simple model that predicts probabilities, use cross-entropy to measure errors, and use an optimizer to update the model's parameters until it classifies emails correctly.
 
