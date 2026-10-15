@@ -808,7 +808,7 @@ with torch.no_grad():
 
 ---
 
-## Part 7 — Multi-Class Classification with Softmax
+## Part 7 Multi-Class Classification with Softmax
 
 ### 7.1 From one score to many
 
