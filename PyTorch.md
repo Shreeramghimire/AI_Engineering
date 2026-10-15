@@ -1245,7 +1245,7 @@ for epoch in range(epochs):
 
 ---
 
-## Part 9 — Deep Neural Networks
+## Part 9 Deep Neural Networks
 
 Part 8 used a single hidden layer. This part adds **more hidden layers** and shows how to build them without naming every layer by hand.
 
@@ -1324,7 +1324,7 @@ Shapes and parameter counts for `[784, 100, 50, 10]` (compare with the one-hidde
 
 ---
 
-## Part 10 — Backpropagation and the Vanishing Gradient Problem
+## Part 10 Backpropagation and the Vanishing Gradient Problem
 
 ### 10.1 Backpropagation basics
 
@@ -1455,7 +1455,7 @@ The gradient at the output layer (δ²) is reused to compute the hidden-layer gr
 > - use batch normalization, momentum, adaptive optimizers, and learning-rate schedules
 > - reduce overfitting with dropout, and switch correctly between training and evaluation modes
 
-## Part 11 — Weight Initialization and Batch Normalization
+## Part 11 Weight Initialization and Batch Normalization
 
 Part 10 ended with a list of fixes for vanishing gradients. This part covers two of them: **how the weights start** (initialization) and **keeping activations well-scaled during training** (batch normalization). Momentum, the third helper, is in Part 12.
 
@@ -1590,7 +1590,7 @@ class Net(nn.Module):
 
 ---
 
-## Part 12 — Better Training: Momentum, Optimizers, and Learning-Rate Strategies
+## Part 12 Better Training: Momentum, Optimizers, and Learning-Rate Strategies
 
 So far we have mostly used plain SGD (the Part 8 training loop already used Adam). This part starts with momentum, then explains smarter optimizers and ways to adjust the learning rate during training. Together they are the optimizer side of the vanishing-gradient solutions in Section 10.5.
 
@@ -1710,7 +1710,7 @@ scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, warmup_lambda)
 
 ---
 
-## Part 13 — Overfitting and Dropout
+## Part 13 Overfitting and Dropout
 
 ### 13.1 The problem: memorizing the training data
 
@@ -1873,7 +1873,7 @@ It accumulates past gradients into a velocity term, which smooths the updates an
 > - explain residual connections, and adapt a pretrained model through transfer learning
 > - train on a GPU, and know the options for reducing boilerplate and deploying a model
 
-## Part 14 — Convolutional Neural Networks (CNNs)
+## Part 14 Convolutional Neural Networks (CNNs)
 
 So far, images were flattened into vectors (Section 8.1) and fed to dense layers. This part builds from the **motivation for convolution** to a complete CNN, using the same MNIST digits.
 
@@ -2048,7 +2048,7 @@ The final feature map (32 channels × 4×4 = **512 elements**) is flattened and 
 
 ---
 
-## Part 15 — ResNets and Transfer Learning
+## Part 15 ResNets and Transfer Learning
 
 ### 15.1 Problems in deep networks
 
@@ -2136,7 +2136,7 @@ optimizer = torch.optim.Adam(model.fc.parameters(), lr=1e-3)
 
 ---
 
-## Part 16 — Training at Scale and Deployment
+## Part 16 Training at Scale and Deployment
 
 ### 16.1 GPU acceleration with PyTorch
 
