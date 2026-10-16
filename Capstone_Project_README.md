@@ -1002,6 +1002,35 @@ numpy
 pillow
 matplotlib
 ```
+**Run order:** the notebooks in `notebooks/`, from `01` to `05`.
 
-ice | Workflow table |
+## Appendix B: Reproducibility Checklist
+
+- [ ] Fixed random seed (42, 43, 44) in Python, NumPy, Keras (`keras.utils.set_random_seed`), and PyTorch (`torch.manual_seed`)
+- [ ] Splits created once, stored as CSV files, and reused by both frameworks
+- [ ] Positive class (`agricultural` = 1) verified in both pipelines
+- [ ] Augmentation applied to **training data only**
+- [ ] Explicit initializers, Adam epsilon, padding, and rotation fill in both frameworks
+- [ ] Parameter counts match (109,889)
+- [ ] Validation and test loaders use `shuffle=False`
+- [ ] All metrics computed by the same script from saved predictions
+- [ ] Test set used **once**, after the hyperparameters were chosen
+- [ ] Library versions recorded in `requirements.txt`
+
+## Appendix C: Suggested Presentation Outline
+
+| # | Slide | Key message | Visual |
+|---:|---|---|---|
+| 1 | Title and problem | Classify satellite tiles as agricultural or not | Example images of both classes |
+| 2 | Business value | Farmland estimates feed fertilizer sales forecasts; precision guards against over-forecasting | Error-effect table |
+| 3 | Data overview | Source, size, class balance, splits | Class-balance chart |
+| 4 | Loading methods | Bulk (memory-based) vs. sequential (generator-based) | Comparison table and memory formula |
+| 5 | Efficient pipelines | Custom generators vs. built-in utilities, in both frameworks | Side-by-side code |
+| 6 | Augmentation in PyTorch | Label-preserving transforms for satellite images | Grid of augmented samples |
+| 7 | CNN architecture | Same architecture in both frameworks (109,889 parameters) | Layer table or diagram |
+| 8 | Fair-comparison design | Same data, batch size, optimizer, learning rate, epochs | Shared-configuration table |
+| 9 | Hyperparameters | Optimization, regularization, batch size, epochs | Tuning-log summary |
+| 10 | Evaluation metrics | Precision, recall, F1, ROC-AUC (plus IoU and mAP in context) | Confusion matrix |
+| 11 | Results | Keras vs. PyTorch metrics, mean ± std | Metrics table and ROC overlay |
+| 12 | Workflow comparison | Where Keras and PyTorch differ in practice | Workflow table |
 | 13 | Conclusions and next steps | What we learned, limitations, extensions | Bullet summary |
