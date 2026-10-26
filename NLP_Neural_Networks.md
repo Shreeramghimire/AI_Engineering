@@ -1,5 +1,4 @@
-# Neural Networks for Text: A Simple Learning Manual
-### From words and numbers, to language models, Word2Vec, and translation
+# Neural Networks for Text: From words and numbers, to language models, Word2Vec, and translation
 
 > **How to use this manual:** read the parts in order, because each part builds on the one before it. Every part starts with a short idea, uses small examples and tables, and ends with a summary. Open the **Self-check** in Part 9 to test yourself. The code is short on purpose, and each lab is named at the start of the part that uses it.
 
