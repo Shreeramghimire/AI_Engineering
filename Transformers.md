@@ -957,10 +957,10 @@ def translate_pdf(input_file, translator_model, output_file):
 | **Training Objective** | Next-token prediction | MLM + NSP | Seq2seq prediction |
 | **Best For** | Generation | Understanding | Mapping sequences |
 | **Special Tokens** | `<bos>`, `<eos>` | `[CLS]`, `[SEP]`, `[MASK]` | `<bos>`, `<eos>` |
-| **Segment Embeddings?** | ❌ No | ✅ Yes (sentence A/B) | ❌ No |
-| **Causal Mask?** | ✅ Always | ❌ Never | ✅ Only in decoder |
-| **Cross-Attention?** | ❌ No | ❌ No | ✅ Yes |
-| **Parallel Training?** | ✅ Yes | ✅ Yes | ✅ Yes (with teacher forcing) |
+| **Segment Embeddings?** | No | Yes (sentence A/B) | No |
+| **Causal Mask?** | Always | Never | Only in decoder |
+| **Cross-Attention?** | No | No | Yes |
+| **Parallel Training?** | Yes | Yes | Yes (with teacher forcing) |
 
 ### 7.2 Decision Flowchart
 
