@@ -1,5 +1,4 @@
-# Transformers for Language Modeling: A Complete Manual
-### Generative AI language modeling: embeddings, attention, the Transformer, and how to train it
+# Transformers for Language Modeling (Generative AI language modeling: embeddings, attention, the Transformer, and how to train it)
 
 > **How to use this manual:** it is organized in the order we learn: first the building blocks (words and positions), then attention, then the full Transformer, then training. Each part ends with a short summary, and Part 5 has common mistakes and a self-check. The corrections we made to the first version are marked with **Note** or **Careful**.
 
