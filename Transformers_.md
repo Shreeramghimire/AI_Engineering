@@ -109,7 +109,7 @@
 
 ---
 
-## How to Read This Manual
+## How to go through This Manual
 
 **Who is it for?** Anyone who wants to understand Transformers, even if this is the first time. We explain every idea in simple words, with small examples, pictures made of text, and tables. Basic Python helps for the code, but the explanations stand on their own.
 
