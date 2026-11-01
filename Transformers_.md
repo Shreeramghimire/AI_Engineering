@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - **[How to go through This Manual](#how-to-go-through-this-manual)**
-- **[Learning Path](#learning-path)**
+- **[Contents](#Contents)**
   - [The whole story in one picture](#the-whole-story-in-one-picture)
 - **[Part 0: A Beginner's Primer](#part-0-a-beginners-primer)**
   - [0.1 What is a neural network?](#01-what-is-a-neural-network)
@@ -127,11 +127,11 @@
 - The code needs PyTorch. Names such as `DEVICE`, `PAD_IDX`, `vocab`, and `optimizer` are defined elsewhere in the labs.
 
 
-## Learning Path
+## Contents
 
 | Part | Topic | The big question |
 |---|---|---|
-| **0** | Before we start | What math and ideas do we need (neural networks, vectors, softmax, loss)? |
+| **0** | A Beginner´s Primer | What math and ideas do we need (neural networks, vectors, softmax, loss)? |
 | **1** | The big picture | What is a Transformer, and why was it invented? |
 | **2** | From words to numbers | How does a model read text? (tokens, embeddings, positions) |
 | **3** | Attention | How does the model understand context? |
