@@ -126,7 +126,6 @@
 - A comment that starts with **`# FIX`** marks a mistake that existed in an earlier version of the code and is now corrected. These comments teach common pitfalls.
 - The code needs PyTorch. Names such as `DEVICE`, `PAD_IDX`, `vocab`, and `optimizer` are defined elsewhere in the labs.
 
-**What is merged here.** This manual combines three earlier documents: the building blocks and training of Transformers (embeddings, positional encoding, attention, a text classifier, and training tricks), and the three Transformer families (decoder-only, encoder-only, and encoder-decoder). All errors found in the earlier versions are corrected here (the list is in the Appendix).
 
 ## Learning Path
 
