@@ -5,7 +5,7 @@
 - **[How to Read This Manual](#how-to-read-this-manual)**
 - **[Learning Path](#learning-path)**
   - [The whole story in one picture](#the-whole-story-in-one-picture)
-- **[Part 0: A Beginner's Primer (#part-0-a-beginners-primer)**
+- **[Part 0: A Beginner's Primer](#part-0-a-beginners-primer)**
   - [0.1 What is a neural network?](#01-what-is-a-neural-network)
   - [0.2 Vectors, matrices, and the dot product](#02-vectors-matrices-and-the-dot-product)
   - [0.3 Probabilities and softmax](#03-probabilities-and-softmax)
