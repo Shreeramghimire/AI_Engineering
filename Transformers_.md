@@ -145,7 +145,7 @@
 | **11** | Reference | Glossary, cheat sheet, common mistakes, self-check |
 | **Appendix** | Sources and corrections | What was merged and what was fixed |
 
-### The whole story in one picture
+### Steps
 
 ```text
 text → tokens → numbers (IDs) → embeddings (meaning) + positions (order)
