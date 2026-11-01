@@ -1,7 +1,5 @@
 # Transformers
 
-> **In one sentence:** this manual explains how Transformers work, step by step, from the very first idea (turning words into numbers) to the three big model families (GPT, BERT, and translation models), with small examples, plain-language explanations, and working PyTorch code.
-
 ## Table of Contents
 
 - **[How to Read This Manual](#how-to-read-this-manual)**
