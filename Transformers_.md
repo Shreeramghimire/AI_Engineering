@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- **[How to Read This Manual](#how-to-read-this-manual)**
+- **[How to go through This Manual](#how-to-go-through-this-manual)**
 - **[Learning Path](#learning-path)**
   - [The whole story in one picture](#the-whole-story-in-one-picture)
 - **[Part 0: A Beginner's Primer](#part-0-a-beginners-primer)**
