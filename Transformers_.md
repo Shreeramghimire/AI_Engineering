@@ -4,7 +4,7 @@
 
 - **[How to go through This Manual](#how-to-go-through-this-manual)**
 - **[Contents](#Contents)**
-  - [The whole story in one picture](#the-whole-story-in-one-picture)
+  - [Steps](#Steps)
 - **[Part 0: A Beginner's Primer](#part-0-a-beginners-primer)**
   - [0.1 What is a neural network?](#01-what-is-a-neural-network)
   - [0.2 Vectors, matrices, and the dot product](#02-vectors-matrices-and-the-dot-product)
