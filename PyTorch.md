@@ -51,7 +51,7 @@
 
 # Stage 1: Foundations
 
-> **Part 1.** By the end of this stage we can:
+> **Part 1.** By the end of this stage, we can:
 > - explain what PyTorch is and why we use it even for simple models
 > - create and use tensors
 > - compute gradients automatically with autograd
