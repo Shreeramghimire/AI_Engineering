@@ -1,6 +1,6 @@
 # PyTorch (From Linear Regression to Deep Neural Networks and CNNs)
 
-> **How to
+> 
 
 ## Roadmap
 
