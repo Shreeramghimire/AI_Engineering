@@ -1,6 +1,6 @@
 # PyTorch (From Linear Regression to Deep Neural Networks and CNNs)
 
-> **How to use this guide:** the guide has five stages that build on each other, so read them in order the first time. Each stage opens with its goals, each part ends with a "How the pieces connect" note that 
+> **How to use this guide:** the guide has five stages that build on each other, so read them in order the first time. Each stage opens with its goals, each part ends with a 
 
 ## Roadmap
 
